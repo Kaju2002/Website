@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="en" class="h-full antialiased">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Presentations | Research Portfolio</title>
+    <meta
+      name="description"
+      content="An AI-powered mobile ecosystem that protects job seekers across the whole recruitment journey: detecting fake job posts, verifying employers, flagging scam conversations and recommending jobs that are both relevant and safe."
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@500;600;700;800&display=swap"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      try {
+        if (sessionStorage.getItem("intro-seen")) {
+          document.documentElement.setAttribute("data-intro-seen", "");
+        } else {
+          sessionStorage.setItem("intro-seen", "1");
+        }
+      } catch (e) {}
+    </script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body class="flex min-h-full flex-col font-sans">
+    <div
+      id="intro"
+      class="intro fixed inset-0 z-100 grid cursor-pointer place-items-center bg-primary-deep px-6"
+    >
+      <div aria-hidden="true" class="bg-grid absolute inset-0"></div>
+      <button
+        type="button"
+        class="absolute right-5 top-5 text-xs font-semibold uppercase tracking-[0.15em] text-white/50 transition hover:text-white sm:right-8 sm:top-7"
+      >
+        Skip intro
+      </button>
+      <div aria-hidden="true" class="relative w-full max-w-4xl text-center">
+        <div class="intro-in inline-block rounded-lg bg-white px-3 py-2" style="--d: 0.15s">
+          <img src="images/sliit-logo.jpg" alt="" width="474" height="127" class="h-8 w-auto" />
+        </div>
+        <p
+          class="intro-in mt-8 text-xs font-semibold uppercase tracking-[0.3em] text-white/50"
+          style="--d: 0.5s"
+        >
+          R26-SE-002 · Research Project 2026
+        </p>
+        <p class="mt-5 font-display text-2xl font-bold leading-tight text-white sm:text-4xl">
+          <span class="block overflow-hidden pb-1"
+            ><span class="intro-line block" style="--d: 0.8s">AI Ecosystem for</span></span
+          >
+          <span class="block overflow-hidden pb-1"
+            ><span class="intro-line block" style="--d: 1.02s">Fake Job Scam Detection and</span></span
+          >
+          <span class="block overflow-hidden pb-1"
+            ><span class="intro-line block" style="--d: 1.24s">Fraud-Aware Job Recommendation</span></span
+          >
+        </p>
+        <div class="mx-auto mt-8 h-px w-48 bg-white/15">
+          <div class="intro-bar h-full bg-white" style="--d: 0.6s"></div>
+        </div>
+        <p class="intro-in mt-5 text-sm text-white/50" style="--d: 1.6s">
+          Faculty of Computing · Sri Lanka Institute of Information Technology
+        </p>
+      </div>
+    </div>
+
+    <header class="sticky top-0 z-50 border-b border-border/70 bg-white/90 backdrop-blur-xl">
+      <nav class="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 sm:px-8">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="images/sliit-logo.jpg" alt="SLIIT logo" width="474" height="127" class="h-9 w-auto" />
+          <span class="hidden h-8 w-px bg-border xl:block"></span>
+          <span class="hidden leading-tight xl:block">
+            <span class="block font-display text-[15px] font-bold text-primary">Research Portfolio</span>
+            <span class="block text-[11px] font-medium text-muted">R26-SE-002</span>
+          </span>
+        </a>
+
+        <ul class="hidden h-full items-center lg:flex">
+          <li class="h-full">
+            <a
+              href="index.html"
+              class="group relative flex h-full items-center px-2.5 text-sm transition-colors xl:px-3.5 font-medium text-foreground/70 hover:text-primary"
+            >
+              Home
+              <span
+                aria-hidden="true"
+                class="absolute inset-x-2.5 bottom-3.5 h-[2.5px] origin-center rounded-full transition-transform duration-300 xl:inset-x-3.5 scale-x-0 bg-primary/30 group-hover:scale-x-100"
+              ></span>
+            </a>
+          </li>
+          <li class="h-full">
+            <a
+              href="domain.html"
+              class="group relative flex h-full items-center px-2.5 text-sm transition-colors xl:px-3.5 font-medium text-foreground/70 hover:text-primary"
+            >
+              Domain
+              <span
+                aria-hidden="true"
+                class="absolute inset-x-2.5 bottom-3.5 h-[2.5px] origin-center rounded-full transition-transform duration-300 xl:inset-x-3.5 scale-x-0 bg-primary/30 group-hover:scale-x-100"
+              ></span>
+            </a>
+          </li>
+          <li class="h-full">
+            <a
+              href="milestones.html"
+              class="group relative flex h-full items-center px-2.5 text-sm transition-colors xl:px-3.5 font-medium text-foreground/70 hover:text-primary"
+            >
+              Milestones
+              <span
+                aria-hidden="true"
+                class="absolute inset-x-2.5 bottom-3.5 h-[2.5px] origin-center rounded-full transition-transform duration-300 xl:inset-x-3.5 scale-x-0 bg-primary/30 group-hover:scale-x-100"
+              ></span>
+            </a>
+          </li>
+          <li class="h-full">
+            <a
+              href="documents.html"
+              class="group relative flex h-full items-center px-2.5 text-sm transition-colors xl:px-3.5 font-medium text-foreground/70 hover:text-primary"
+            >
+              Documents
+              <span
+                aria-hidden="true"
+                class="absolute inset-x-2.5 bottom-3.5 h-[2.5px] origin-center rounded-full transition-transform duration-300 xl:inset-x-3.5 scale-x-0 bg-primary/30 group-hover:scale-x-100"
+              ></span>
+            </a>
+          </li>
+          <li class="h-full">
+            <a
+              href="presentations.html"
+              aria-current="page"
+              class="group relative flex h-full items-center px-2.5 text-sm transition-colors xl:px-3.5 font-semibold text-primary"
+            >
+              Presentations
+              <span
+                aria-hidden="true"
+                class="absolute inset-x-2.5 bottom-3.5 h-[2.5px] origin-center rounded-full transition-transform duration-300 xl:inset-x-3.5 scale-x-100 bg-primary"
+              ></span>
+            </a>
+          </li>
+          <li class="h-full">
+            <a
+              href="about.html"
+              class="group relative flex h-full items-center px-2.5 text-sm transition-colors xl:px-3.5 font-medium text-foreground/70 hover:text-primary"
+            >
+              About Us
+              <span
+                aria-hidden="true"
+                class="absolute inset-x-2.5 bottom-3.5 h-[2.5px] origin-center rounded-full transition-transform duration-300 xl:inset-x-3.5 scale-x-0 bg-primary/30 group-hover:scale-x-100"
+              ></span>
+            </a>
+          </li>
+          <li class="h-full">
+            <a
+              href="contact.html"
+              class="group relative flex h-full items-center px-2.5 text-sm transition-colors xl:px-3.5 font-medium text-foreground/70 hover:text-primary"
+            >
+              Contact Us
+              <span
+                aria-hidden="true"
+                class="absolute inset-x-2.5 bottom-3.5 h-[2.5px] origin-center rounded-full transition-transform duration-300 xl:inset-x-3.5 scale-x-0 bg-primary/30 group-hover:scale-x-100"
+              ></span>
+            </a>
+          </li>
+        </ul>
+
+        <button
+          type="button"
+          id="menu-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          class="grid h-10 w-10 place-items-center rounded-xl text-primary transition-colors hover:bg-primary-light lg:hidden"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="h-5 w-5"
+            aria-hidden="true"
+            data-icon="open"
+          >
+            <path d="M4 5h16" />
+            <path d="M4 12h16" />
+            <path d="M4 19h16" />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="hidden h-5 w-5"
+            aria-hidden="true"
+            data-icon="close"
+          >
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+      </nav>
+
+      <div id="mobile-menu" class="border-t border-border/70 bg-white lg:hidden" hidden>
+        <ul class="mx-auto grid max-w-7xl gap-1 px-5 py-4 sm:px-8">
+          <li>
+            <a
+              href="index.html"
+              class="block border-l-[3px] px-4 py-3 text-sm transition-colors border-transparent font-medium text-foreground/80 hover:bg-primary-soft hover:text-primary"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="domain.html"
+              class="block border-l-[3px] px-4 py-3 text-sm transition-colors border-transparent font-medium text-foreground/80 hover:bg-primary-soft hover:text-primary"
+              >Domain</a
+            >
+          </li>
+          <li>
+            <a
+              href="milestones.html"
+              class="block border-l-[3px] px-4 py-3 text-sm transition-colors border-transparent font-medium text-foreground/80 hover:bg-primary-soft hover:text-primary"
+              >Milestones</a
+            >
+          </li>
+          <li>
+            <a
+              href="documents.html"
+              class="block border-l-[3px] px-4 py-3 text-sm transition-colors border-transparent font-medium text-foreground/80 hover:bg-primary-soft hover:text-primary"
+              >Documents</a
+            >
+          </li>
+          <li>
+            <a
+              href="presentations.html"
+              aria-current="page"
+              class="block border-l-[3px] px-4 py-3 text-sm transition-colors border-primary bg-primary-soft font-semibold text-primary"
+              >Presentations</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="block border-l-[3px] px-4 py-3 text-sm transition-colors border-transparent font-medium text-foreground/80 hover:bg-primary-soft hover:text-primary"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="block border-l-[3px] px-4 py-3 text-sm transition-colors border-transparent font-medium text-foreground/80 hover:bg-primary-soft hover:text-primary"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="flex-1">
+      <section class="relative overflow-hidden bg-primary text-white">
+        <div class="bg-grid pointer-events-none absolute inset-0"></div>
+        <div
+          class="pointer-events-none absolute -left-24 -top-24 h-72 w-72 rounded-full bg-accent/30 blur-3xl"
+        ></div>
+        <div
+          class="pointer-events-none absolute -bottom-32 right-0 h-80 w-80 rounded-full bg-indigo-400/20 blur-3xl"
+        ></div>
+        <div class="relative mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20">
+          <p class="animate-fade-up text-sm font-semibold uppercase tracking-[0.2em] text-white/60">
+            Presentations
+          </p>
+          <h1
+            class="mt-3 max-w-3xl animate-fade-up font-display text-4xl font-bold tracking-tight [animation-delay:80ms] sm:text-5xl"
+          >
+            Presentation slides
+          </h1>
+          <p
+            class="mt-4 max-w-2xl animate-fade-up text-lg leading-relaxed text-white/70 [animation-delay:160ms]"
+          >
+            The system demo, slides from our past presentations, and space for the upcoming ones.
+          </p>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-28">
+        <div class="mb-14">
+          <div
+            id="demo"
+            class="relative scroll-mt-24 overflow-hidden rounded-2xl bg-primary px-7 py-9 text-white sm:px-10 sm:py-11"
+          >
+            <div aria-hidden="true" class="bg-grid absolute inset-0"></div>
+            <div class="relative grid items-center gap-8 lg:grid-cols-[1.4fr_1fr] lg:gap-14">
+              <div>
+                <div class="flex items-center gap-4">
+                  <span class="text-xs font-semibold uppercase tracking-[0.2em] text-white/60"
+                    >System demo</span
+                  >
+                  <span class="h-px flex-1 bg-white/20"></span>
+                </div>
+                <h2 class="mt-5 font-display text-2xl font-bold sm:text-3xl">See the system in action</h2>
+                <p class="mt-3 max-w-2xl leading-relaxed text-white/75">
+                  Watch the complete system in action: demonstration videos of the mobile app and the web
+                  platform, together with the slides explaining the idea behind the system.
+                </p>
+                <a
+                  href="https://mysliit-my.sharepoint.com/my?id=%2Fpersonal%2Fit22224002%5Fmy%5Fsliit%5Flk%2FDocuments%2FResearch%20Demo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="group mt-7 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-primary transition hover:-translate-y-0.5"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-4 w-4 fill-current"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"
+                    />
+                  </svg>
+                  Watch the demo
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-4 w-4 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                    aria-hidden="true"
+                  >
+                    <path d="M7 7h10v10" />
+                    <path d="M7 17 17 7" />
+                  </svg>
+                </a>
+              </div>
+
+              <ol class="divide-y divide-white/15 border-y border-white/15">
+                <li class="flex items-center gap-4 py-3.5 text-sm text-white/85">
+                  <span class="font-display text-xs font-bold tabular-nums text-white/50">01</span>Mobile app
+                  demo video
+                </li>
+                <li class="flex items-center gap-4 py-3.5 text-sm text-white/85">
+                  <span class="font-display text-xs font-bold tabular-nums text-white/50">02</span>Web
+                  platform demo video
+                </li>
+                <li class="flex items-center gap-4 py-3.5 text-sm text-white/85">
+                  <span class="font-display text-xs font-bold tabular-nums text-white/50">03</span>System
+                  overview slides
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <p class="text-sm font-medium text-muted">
+            <span class="font-semibold text-primary">2</span> of 4 available · the rest will be added as they
+            are completed
+          </p>
+          <span class="h-px flex-1 bg-border"></span>
+        </div>
+
+        <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <article
+            class="flex flex-col rounded-2xl bg-white p-6 shadow-sm ring-1 ring-border transition duration-300 hover:shadow-lg hover:shadow-primary/5"
+          >
+            <div class="flex items-center gap-3">
+              <span class="font-display text-sm font-bold tabular-nums text-accent">01</span>
+              <span class="h-px flex-1 bg-border"></span>
+              <span class="text-[11px] font-semibold tracking-wider text-muted">PPTX</span>
+            </div>
+
+            <h3 class="mt-5 font-display text-lg font-bold text-primary">Proposal Presentation</h3>
+            <p class="mt-1.5 text-sm leading-relaxed text-muted">Slides from the proposal presentation.</p>
+
+            <div class="mt-auto pt-6">
+              <a
+                href="documents/proposal-presentation.pptx"
+                download
+                class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-primary-dark"
+              >
+                Download
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-4 w-4 shrink-0"
+                  aria-hidden="true"
+                >
+                  <path d="M12 5v14" />
+                  <path d="m19 12-7 7-7-7" />
+                </svg>
+              </a>
+            </div>
+          </article>
+          <article
+            class="flex flex-col rounded-2xl bg-white p-6 shadow-sm ring-1 ring-border transition duration-300 hover:shadow-lg hover:shadow-primary/5"
+          >
+            <div class="flex items-center gap-3">
+              <span class="font-display text-sm font-bold tabular-nums text-accent">02</span>
+              <span class="h-px flex-1 bg-border"></span>
+              <span class="text-[11px] font-semibold tracking-wider text-muted">PPTX</span>
+            </div>
+
+            <h3 class="mt-5 font-display text-lg font-bold text-primary">Progress Presentation 1</h3>
+            <p class="mt-1.5 text-sm leading-relaxed text-muted">
+              Slides from the first progress presentation.
+            </p>
+
+            <div class="mt-auto pt-6">
+              <a
+                href="documents/pp1-presentation.pptx"
+                download
+                class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-primary-dark"
+              >
+                Download
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-4 w-4 shrink-0"
+                  aria-hidden="true"
+                >
+                  <path d="M12 5v14" />
+                  <path d="m19 12-7 7-7-7" />
+                </svg>
+              </a>
+            </div>
+          </article>
+          <article
+            class="flex flex-col rounded-2xl bg-white p-6 shadow-sm ring-1 ring-border transition duration-300 hover:shadow-lg hover:shadow-primary/5"
+          >
+            <div class="flex items-center gap-3">
+              <span class="font-display text-sm font-bold tabular-nums text-accent">03</span>
+              <span class="h-px flex-1 bg-border"></span>
+            </div>
+
+            <h3 class="mt-5 font-display text-lg font-bold text-primary">Progress Presentation 2</h3>
+            <p class="mt-1.5 text-sm leading-relaxed text-muted">
+              Slides from the second progress presentation.
+            </p>
+
+            <div class="mt-auto pt-6">
+              <p class="border-t border-border pt-4 text-sm font-medium text-foreground/40">Coming soon</p>
+            </div>
+          </article>
+          <article
+            class="flex flex-col rounded-2xl bg-white p-6 shadow-sm ring-1 ring-border transition duration-300 hover:shadow-lg hover:shadow-primary/5"
+          >
+            <div class="flex items-center gap-3">
+              <span class="font-display text-sm font-bold tabular-nums text-accent">04</span>
+              <span class="h-px flex-1 bg-border"></span>
+            </div>
+
+            <h3 class="mt-5 font-display text-lg font-bold text-primary">Final Presentation</h3>
+            <p class="mt-1.5 text-sm leading-relaxed text-muted">
+              Slides from the final presentation and viva.
+            </p>
+
+            <div class="mt-auto pt-6">
+              <p class="border-t border-border pt-4 text-sm font-medium text-foreground/40">Coming soon</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="relative overflow-hidden bg-primary-deep text-white/80">
+      <div
+        class="pointer-events-none absolute -top-32 right-0 h-72 w-72 rounded-full bg-accent/20 blur-3xl"
+      ></div>
+      <div class="relative mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-8 md:grid-cols-[1.5fr_1fr_1fr]">
+        <div>
+          <div class="flex items-center gap-2.5">
+            <span class="grid h-9 w-9 place-items-center rounded-xl bg-white text-primary"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-5 w-5"
+                aria-hidden="true"
+              >
+                <path
+                  d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+                />
+                <path d="M22 10v6" />
+                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></svg
+            ></span>
+            <span class="font-display text-lg font-bold text-white">Research Portfolio</span>
+          </div>
+          <p class="mt-4 max-w-sm text-sm leading-relaxed text-white/60">
+            AI Ecosystem for Fake Job Scam Detection and Fraud-Aware Job Recommendation
+          </p>
+          <p class="mt-2 text-sm text-white/60">
+            Faculty of Computing, Sri Lanka Institute of Information Technology
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-display text-sm font-semibold uppercase tracking-wider text-white">Explore</h3>
+          <ul class="mt-4 grid grid-cols-2 gap-2 text-sm">
+            <li><a href="index.html" class="text-white/60 transition-colors hover:text-white">Home</a></li>
+            <li><a href="domain.html" class="text-white/60 transition-colors hover:text-white">Domain</a></li>
+            <li>
+              <a href="milestones.html" class="text-white/60 transition-colors hover:text-white"
+                >Milestones</a
+              >
+            </li>
+            <li>
+              <a href="documents.html" class="text-white/60 transition-colors hover:text-white">Documents</a>
+            </li>
+            <li>
+              <a href="presentations.html" class="text-white/60 transition-colors hover:text-white"
+                >Presentations</a
+              >
+            </li>
+            <li>
+              <a href="about.html" class="text-white/60 transition-colors hover:text-white">About Us</a>
+            </li>
+            <li>
+              <a href="contact.html" class="text-white/60 transition-colors hover:text-white">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-display text-sm font-semibold uppercase tracking-wider text-white">Get in touch</h3>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li>
+              <a
+                href="mailto:kajanthan2k1@gmail.com"
+                class="flex items-center gap-2 text-white/60 transition-colors hover:text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-4 w-4 shrink-0"
+                  aria-hidden="true"
+                >
+                  <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                </svg>
+                kajanthan2k1@gmail.com
+              </a>
+            </li>
+            <li>
+              <a
+                href="tel:+94764539863"
+                class="flex items-center gap-2 text-white/60 transition-colors hover:text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-4 w-4 shrink-0"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
+                  />
+                </svg>
+                +94 76 453 9863
+              </a>
+            </li>
+            <li class="flex items-start gap-2 text-white/60">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="mt-0.5 h-4 w-4 shrink-0"
+                aria-hidden="true"
+              >
+                <path
+                  d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              SLIIT, New Kandy Road, Malabe, Sri Lanka
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="relative border-t border-white/10">
+        <p class="mx-auto max-w-7xl px-5 py-6 text-xs text-white/50 sm:px-8">
+          © 2026 R26-SE-002 · Sri Lanka Institute of Information Technology. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <button
+      type="button"
+      id="scroll-top"
+      aria-label="Back to top"
+      tabindex="-1"
+      class="fixed bottom-6 right-6 z-50 grid h-14 w-14 place-items-center rounded-full bg-accent text-white shadow-lg shadow-accent/25 transition duration-300 hover:-translate-y-1 hover:bg-primary sm:bottom-8 sm:right-8 pointer-events-none translate-y-4 opacity-0"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.25"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="h-6 w-6"
+        aria-hidden="true"
+      >
+        <path d="m5 12 7-7 7 7" />
+        <path d="M12 19V5" />
+      </svg>
+    </button>
+  </body>
+</html>
