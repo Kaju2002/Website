@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <path id="ring" fill-rule="evenodd" d="M3 45a29 13 0 1 0 58 0a29 13 0 1 0-58 0ZM6.5 44a25.5 9.8 0 1 0 51 0a25.5 9.8 0 1 0-51 0Z" transform="rotate(10 32 45)"/>
+    <clipPath id="body">
+      <rect width="64" height="45"/>
+      <ellipse cx="32" cy="45" rx="29" ry="13" transform="rotate(10 32 45)"/>
+    </clipPath>
+    <clipPath id="front">
+      <path d="M0 0H17L22 46L56 47L64 47V64H0Z"/>
+    </clipPath>
+    <clipPath id="back">
+      <path d="M36 20H64V45L57 45L36 40Z"/>
+    </clipPath>
+    <mask id="cut">
+      <rect width="64" height="64" fill="#fff"/>
+      <use href="#ring" clip-path="url(#front)" fill="#000" stroke="#000" stroke-width="3.5"/>
+      <path d="M26 29.5H38L32 43Z" fill="#000"/>
+    </mask>
+  </defs>
+  <use href="#ring" clip-path="url(#back)" fill="#9cd3f4"/>
+  <g fill="#26478c">
+    <g mask="url(#cut)" clip-path="url(#body)">
+      <path d="M14 56V40C14 33.5 18.5 30 25 29.5H39C45.5 30 50 33.5 50 40V56Z"/>
+    </g>
+    <path d="M23.5 16.5C23.5 9.5 27 6 32 6c2.5 0 4-.8 4.5-2c.5 1.5.4 2.6-.3 3.2C39 8.4 40.5 11.5 40.5 16.5c.9 0 1.4.8 1.2 2.2l-.5 2.6c-.2 1-.8 1.4-1.4 1.3C38.6 27.8 35.7 30 32 30s-6.6-2.2-7.8-7.4c-.6.1-1.2-.3-1.4-1.3l-.5-2.6c-.2-1.4.3-2.2 1.2-2.2Z"/>
+    <path d="M30.2 31h3.6l-.8 3h-2Z"/>
+    <path d="M30.6 34.6h2.8l1.4 6.6L32 44l-2.8-2.8Z"/>
+    <use href="#ring" clip-path="url(#front)"/>
+  </g>
+</svg>

@@ -1,0 +1,2313 @@
+<!doctype html>
+<html lang="en" class="h-full antialiased">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Domain | Research Portfolio</title>
+    <meta
+      name="description"
+      content="An AI-powered mobile ecosystem that protects job seekers across the whole recruitment journey: detecting fake job posts, verifying employers, flagging scam conversations and recommending jobs that are both relevant and safe."
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@500;600;700;800&display=swap"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      try {
+        if (sessionStorage.getItem("intro-seen")) {
+          document.documentElement.setAttribute("data-intro-seen", "");
+        } else {
+          sessionStorage.setItem("intro-seen", "1");
+        }
+      } catch (e) {}
+    </script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body class="flex min-h-full flex-col font-sans">
+    <div
+      id="intro"
+      class="intro fixed inset-0 z-100 grid cursor-pointer place-items-center bg-primary-deep px-6"
+    >
+      <div aria-hidden="true" class="bg-grid absolute inset-0"></div>
+      <button
+        type="button"
+        class="absolute right-5 top-5 text-xs font-semibold uppercase tracking-[0.15em] text-white/50 transition hover:text-white sm:right-8 sm:top-7"
+      >
+        Skip intro
+      </button>
+      <div aria-hidden="true" class="relative w-full max-w-4xl text-center">
+        <div class="intro-in inline-block rounded-lg bg-white px-3 py-2" style="--d: 0.15s">
+          <img src="images/sliit-logo.jpg" alt="" width="474" height="127" class="h-8 w-auto" />
+        </div>
+        <p
+          class="intro-in mt-8 text-xs font-semibold uppercase tracking-[0.3em] text-white/50"
+          style="--d: 0.5s"
+        >
+          R26-SE-002 · Research Project 2026
+        </p>
+        <p class="mt-5 font-display text-2xl font-bold leading-tight text-white sm:text-4xl">
+          <span class="block overflow-hidden pb-1"
+            ><span class="intro-line block" style="--d: 0.8s">AI Ecosystem for</span></span
+          >
+          <span class="block overflow-hidden pb-1"
+            ><span class="intro-line block" style="--d: 1.02s">Fake Job Scam Detection and</span></span
+          >
+          <span class="block overflow-hidden pb-1"
+            ><span class="intro-line block" style="--d: 1.24s">Fraud-Aware Job Recommendation</span></span
+          >
+        </p>
+        <div class="mx-auto mt-8 h-px w-48 bg-white/15">
+          <div class="intro-bar h-full bg-white" style="--d: 0.6s"></div>
+        </div>
+        <p class="intro-in mt-5 text-sm text-white/50" style="--d: 1.6s">
+          Faculty of Computing · Sri Lanka Institute of Information Technology
+        </p>
+      </div>
+    </div>
+
+    <header class="sticky top-0 z-50 border-b border-border/70 bg-white/90 backdrop-blur-xl">
+      <nav class="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 sm:px-8">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="images/sliit-logo.jpg" alt="SLIIT logo" width="474" height="127" class="h-9 w-auto" />
+          <span class="hidden h-8 w-px bg-border xl:block"></span>
+          <span class="hidden leading-tight xl:block">
+            <span class="block font-display text-[15px] font-bold text-primary">Research Portfolio</span>
+            <span class="block text-[11px] font-medium text-muted">R26-SE-002</span>
+          </span>
+        </a>
+
+        <ul class="hidden h-full items-center lg:flex">
+          <li class="h-full">
+            <a
+              href="index.html"
+              class="group relative flex h-full items-center px-2.5 text-sm transition-colors xl:px-3.5 font-medium text-foreground/70 hover:text-primary"
+            >
+              Home
+              <span
+                aria-hidden="true"
+                class="absolute inset-x-2.5 bottom-3.5 h-[2.5px] origin-center rounded-full transition-transform duration-300 xl:inset-x-3.5 scale-x-0 bg-primary/30 group-hover:scale-x-100"
+              ></span>
+            </a>
+          </li>
+          <li class="h-full">
+            <a
+              href="domain.html"
+              aria-current="page"
+              class="group relative flex h-full items-center px-2.5 text-sm transition-colors xl:px-3.5 font-semibold text-primary"
+            >
+              Domain
+              <span
+                aria-hidden="true"
+                class="absolute inset-x-2.5 bottom-3.5 h-[2.5px] origin-center rounded-full transition-transform duration-300 xl:inset-x-3.5 scale-x-100 bg-primary"
+              ></span>
+            </a>
+          </li>
+          <li class="h-full">
+            <a
+              href="milestones.html"
+              class="group relative flex h-full items-center px-2.5 text-sm transition-colors xl:px-3.5 font-medium text-foreground/70 hover:text-primary"
+            >
+              Milestones
+              <span
+                aria-hidden="true"
+                class="absolute inset-x-2.5 bottom-3.5 h-[2.5px] origin-center rounded-full transition-transform duration-300 xl:inset-x-3.5 scale-x-0 bg-primary/30 group-hover:scale-x-100"
+              ></span>
+            </a>
+          </li>
+          <li class="h-full">
+            <a
+              href="documents.html"
+              class="group relative flex h-full items-center px-2.5 text-sm transition-colors xl:px-3.5 font-medium text-foreground/70 hover:text-primary"
+            >
+              Documents
+              <span
+                aria-hidden="true"
+                class="absolute inset-x-2.5 bottom-3.5 h-[2.5px] origin-center rounded-full transition-transform duration-300 xl:inset-x-3.5 scale-x-0 bg-primary/30 group-hover:scale-x-100"
+              ></span>
+            </a>
+          </li>
+          <li class="h-full">
+            <a
+              href="presentations.html"
+              class="group relative flex h-full items-center px-2.5 text-sm transition-colors xl:px-3.5 font-medium text-foreground/70 hover:text-primary"
+            >
+              Presentations
+              <span
+                aria-hidden="true"
+                class="absolute inset-x-2.5 bottom-3.5 h-[2.5px] origin-center rounded-full transition-transform duration-300 xl:inset-x-3.5 scale-x-0 bg-primary/30 group-hover:scale-x-100"
+              ></span>
+            </a>
+          </li>
+          <li class="h-full">
+            <a
+              href="about.html"
+              class="group relative flex h-full items-center px-2.5 text-sm transition-colors xl:px-3.5 font-medium text-foreground/70 hover:text-primary"
+            >
+              About Us
+              <span
+                aria-hidden="true"
+                class="absolute inset-x-2.5 bottom-3.5 h-[2.5px] origin-center rounded-full transition-transform duration-300 xl:inset-x-3.5 scale-x-0 bg-primary/30 group-hover:scale-x-100"
+              ></span>
+            </a>
+          </li>
+          <li class="h-full">
+            <a
+              href="contact.html"
+              class="group relative flex h-full items-center px-2.5 text-sm transition-colors xl:px-3.5 font-medium text-foreground/70 hover:text-primary"
+            >
+              Contact Us
+              <span
+                aria-hidden="true"
+                class="absolute inset-x-2.5 bottom-3.5 h-[2.5px] origin-center rounded-full transition-transform duration-300 xl:inset-x-3.5 scale-x-0 bg-primary/30 group-hover:scale-x-100"
+              ></span>
+            </a>
+          </li>
+        </ul>
+
+        <button
+          type="button"
+          id="menu-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          class="grid h-10 w-10 place-items-center rounded-xl text-primary transition-colors hover:bg-primary-light lg:hidden"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="h-5 w-5"
+            aria-hidden="true"
+            data-icon="open"
+          >
+            <path d="M4 5h16" />
+            <path d="M4 12h16" />
+            <path d="M4 19h16" />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="hidden h-5 w-5"
+            aria-hidden="true"
+            data-icon="close"
+          >
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+      </nav>
+
+      <div id="mobile-menu" class="border-t border-border/70 bg-white lg:hidden" hidden>
+        <ul class="mx-auto grid max-w-7xl gap-1 px-5 py-4 sm:px-8">
+          <li>
+            <a
+              href="index.html"
+              class="block border-l-[3px] px-4 py-3 text-sm transition-colors border-transparent font-medium text-foreground/80 hover:bg-primary-soft hover:text-primary"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="domain.html"
+              aria-current="page"
+              class="block border-l-[3px] px-4 py-3 text-sm transition-colors border-primary bg-primary-soft font-semibold text-primary"
+              >Domain</a
+            >
+          </li>
+          <li>
+            <a
+              href="milestones.html"
+              class="block border-l-[3px] px-4 py-3 text-sm transition-colors border-transparent font-medium text-foreground/80 hover:bg-primary-soft hover:text-primary"
+              >Milestones</a
+            >
+          </li>
+          <li>
+            <a
+              href="documents.html"
+              class="block border-l-[3px] px-4 py-3 text-sm transition-colors border-transparent font-medium text-foreground/80 hover:bg-primary-soft hover:text-primary"
+              >Documents</a
+            >
+          </li>
+          <li>
+            <a
+              href="presentations.html"
+              class="block border-l-[3px] px-4 py-3 text-sm transition-colors border-transparent font-medium text-foreground/80 hover:bg-primary-soft hover:text-primary"
+              >Presentations</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="block border-l-[3px] px-4 py-3 text-sm transition-colors border-transparent font-medium text-foreground/80 hover:bg-primary-soft hover:text-primary"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="block border-l-[3px] px-4 py-3 text-sm transition-colors border-transparent font-medium text-foreground/80 hover:bg-primary-soft hover:text-primary"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="flex-1">
+      <section class="relative overflow-hidden bg-primary text-white">
+        <div class="bg-grid pointer-events-none absolute inset-0"></div>
+        <div
+          class="pointer-events-none absolute -left-24 -top-24 h-72 w-72 rounded-full bg-accent/30 blur-3xl"
+        ></div>
+        <div
+          class="pointer-events-none absolute -bottom-32 right-0 h-80 w-80 rounded-full bg-indigo-400/20 blur-3xl"
+        ></div>
+        <div class="relative mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20">
+          <p class="animate-fade-up text-sm font-semibold uppercase tracking-[0.2em] text-white/60">Domain</p>
+          <h1
+            class="mt-3 max-w-3xl animate-fade-up font-display text-4xl font-bold tracking-tight [animation-delay:80ms] sm:text-5xl"
+          >
+            Research domain
+          </h1>
+          <p
+            class="mt-4 max-w-2xl animate-fade-up text-lg leading-relaxed text-white/70 [animation-delay:160ms]"
+          >
+            The literature survey, research gap, research problem, objectives, methodology and technologies
+            behind the project.
+          </p>
+        </div>
+      </section>
+
+      <nav
+        aria-label="On this page"
+        id="domain-nav"
+        class="sticky top-16 z-40 border-b border-border/70 bg-white/90 backdrop-blur-xl"
+      >
+        <ol class="mx-auto flex max-w-7xl gap-1 overflow-x-auto px-5 sm:px-8">
+          <li class="shrink-0">
+            <a
+              href="#literature"
+              aria-current="location"
+              class="flex items-center gap-2 border-b-2 px-3 py-3.5 text-sm transition-colors border-primary font-semibold text-primary"
+            >
+              <span class="text-xs font-bold tabular-nums text-accent">01</span>
+              Literature survey
+            </a>
+          </li>
+          <li class="shrink-0">
+            <a
+              href="#scope"
+              class="flex items-center gap-2 border-b-2 px-3 py-3.5 text-sm transition-colors border-transparent font-medium text-foreground/60 hover:text-primary"
+            >
+              <span class="text-xs font-bold tabular-nums text-accent">02</span>
+              Research gap &amp; problem
+            </a>
+          </li>
+          <li class="shrink-0">
+            <a
+              href="#objectives"
+              class="flex items-center gap-2 border-b-2 px-3 py-3.5 text-sm transition-colors border-transparent font-medium text-foreground/60 hover:text-primary"
+            >
+              <span class="text-xs font-bold tabular-nums text-accent">03</span>
+              Research objectives
+            </a>
+          </li>
+          <li class="shrink-0">
+            <a
+              href="#methodology"
+              class="flex items-center gap-2 border-b-2 px-3 py-3.5 text-sm transition-colors border-transparent font-medium text-foreground/60 hover:text-primary"
+            >
+              <span class="text-xs font-bold tabular-nums text-accent">04</span>
+              Methodology
+            </a>
+          </li>
+          <li class="shrink-0">
+            <a
+              href="#technologies"
+              class="flex items-center gap-2 border-b-2 px-3 py-3.5 text-sm transition-colors border-transparent font-medium text-foreground/60 hover:text-primary"
+            >
+              <span class="text-xs font-bold tabular-nums text-accent">05</span>
+              Technologies used
+            </a>
+          </li>
+        </ol>
+      </nav>
+
+      <section id="literature" class="mx-auto max-w-7xl scroll-mt-32 px-5 py-20 sm:px-8 lg:py-28">
+        <div class="max-w-2xl">
+          <span
+            class="inline-flex items-center gap-2 rounded-full bg-primary-light px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary"
+          >
+            <span class="h-1.5 w-1.5 rounded-full bg-accent"></span>
+            Literature survey
+          </span>
+          <h2 class="mt-4 font-display text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+            What existing research has done
+          </h2>
+          <p class="mt-4 text-base leading-relaxed text-muted sm:text-lg">
+            Key previous studies reviewed for each component, what they contributed, and what they leave
+            unsolved.
+          </p>
+        </div>
+
+        <div
+          role="tablist"
+          aria-label="Research components"
+          id="literature-tabs"
+          class="mt-10 grid gap-2 sm:grid-cols-2 lg:grid-cols-4"
+        >
+          <button
+            type="button"
+            role="tab"
+            id="literature-tab-0"
+            aria-selected="true"
+            aria-controls="literature-panel-0"
+            class="flex items-start gap-3 rounded-xl border px-4 py-3.5 text-left transition border-primary bg-primary text-white"
+          >
+            <span class="font-display text-sm font-bold tabular-nums text-white/60">01</span>
+            <span class="text-sm font-semibold leading-snug">Multilingual Fake Job Post Detection</span>
+          </button>
+          <button
+            type="button"
+            role="tab"
+            id="literature-tab-1"
+            aria-selected="false"
+            aria-controls="literature-panel-1"
+            class="flex items-start gap-3 rounded-xl border px-4 py-3.5 text-left transition border-border bg-white text-foreground/80 hover:border-primary/30 hover:text-primary"
+          >
+            <span class="font-display text-sm font-bold tabular-nums text-accent">02</span>
+            <span class="text-sm font-semibold leading-snug">Employer Legitimacy Verification</span>
+          </button>
+          <button
+            type="button"
+            role="tab"
+            id="literature-tab-2"
+            aria-selected="false"
+            aria-controls="literature-panel-2"
+            class="flex items-start gap-3 rounded-xl border px-4 py-3.5 text-left transition border-border bg-white text-foreground/80 hover:border-primary/30 hover:text-primary"
+          >
+            <span class="font-display text-sm font-bold tabular-nums text-accent">03</span>
+            <span class="text-sm font-semibold leading-snug"
+              >Scam Conversation &amp; Manipulation Tactic Detection (BSTD)</span
+            >
+          </button>
+          <button
+            type="button"
+            role="tab"
+            id="literature-tab-3"
+            aria-selected="false"
+            aria-controls="literature-panel-3"
+            class="flex items-start gap-3 rounded-xl border px-4 py-3.5 text-left transition border-border bg-white text-foreground/80 hover:border-primary/30 hover:text-primary"
+          >
+            <span class="font-display text-sm font-bold tabular-nums text-accent">04</span>
+            <span class="text-sm font-semibold leading-snug"
+              >Fraud-Aware Job Recommendation &amp; Ranking</span
+            >
+          </button>
+        </div>
+
+        <div
+          role="tabpanel"
+          id="literature-panel-0"
+          aria-labelledby="literature-tab-0"
+          class="mt-6 rounded-2xl bg-white p-7 shadow-sm ring-1 ring-border sm:p-9"
+        >
+          <p class="text-sm text-muted">Santhosh S · IT22113740</p>
+          <p class="mt-3 max-w-4xl leading-relaxed text-foreground/80">
+            Earlier work treats fake job detection as an English-only, real-or-fake classification problem.
+            Most studies use the EMSCAD dataset with machine learning or deep learning classifiers and report
+            accuracy above 94%, but very few are deployed, and almost none explain their predictions or give
+            users a graded risk level.
+          </p>
+
+          <div class="mt-8 overflow-x-auto">
+            <table class="w-full min-w-[40rem] text-left text-sm">
+              <thead class="border-b-2 border-primary/15 text-xs uppercase tracking-[0.12em] text-primary/70">
+                <tr>
+                  <th class="w-[22%] py-3 pr-6 font-semibold">Study</th>
+                  <th class="py-3 pr-6 font-semibold">Contribution</th>
+                  <th class="py-3 font-semibold">Limitation</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-border">
+                <tr class="align-top">
+                  <td class="py-4 pr-6 font-semibold text-primary">Dutta &amp; Bandyopadhyay (2020)</td>
+                  <td class="py-4 pr-6 leading-relaxed text-foreground/80">
+                    Compared seven ML classifiers on EMSCAD; Random Forest reached 98.27% accuracy.
+                  </td>
+                  <td class="py-4 leading-relaxed text-foreground/65">
+                    Little NLP beyond basic features and no handling of class imbalance.
+                  </td>
+                </tr>
+                <tr class="align-top">
+                  <td class="py-4 pr-6 font-semibold text-primary">Pillai (2023)</td>
+                  <td class="py-4 pr-6 leading-relaxed text-foreground/80">
+                    Bidirectional LSTM with word embeddings, reaching 98.71% accuracy.
+                  </td>
+                  <td class="py-4 leading-relaxed text-foreground/65">
+                    No interpretability and no risk levels for end users.
+                  </td>
+                </tr>
+                <tr class="align-top">
+                  <td class="py-4 pr-6 font-semibold text-primary">Allam et al. (2025)</td>
+                  <td class="py-4 pr-6 leading-relaxed text-foreground/80">
+                    Tested six class-balancing strategies across four classifiers.
+                  </td>
+                  <td class="py-4 leading-relaxed text-foreground/65">
+                    Research prototype only, with no user interface or explanations.
+                  </td>
+                </tr>
+                <tr class="align-top">
+                  <td class="py-4 pr-6 font-semibold text-primary">Pangare et al. (2026)</td>
+                  <td class="py-4 pr-6 leading-relaxed text-foreground/80">
+                    JobScamShield: ML classification plus company checks through the GST registry and
+                    Glassdoor.
+                  </td>
+                  <td class="py-4 leading-relaxed text-foreground/65">
+                    Works only in India and real-time API calls add latency.
+                  </td>
+                </tr>
+                <tr class="align-top">
+                  <td class="py-4 pr-6 font-semibold text-primary">Singh et al. (2025)</td>
+                  <td class="py-4 pr-6 leading-relaxed text-foreground/80">
+                    Heuristic signals such as free email domains and scam keywords with Logistic Regression.
+                  </td>
+                  <td class="py-4 leading-relaxed text-foreground/65">
+                    No deep semantic understanding from transformer models.
+                  </td>
+                </tr>
+                <tr class="align-top">
+                  <td class="py-4 pr-6 font-semibold text-primary">Sathwika et al. (2024)</td>
+                  <td class="py-4 pr-6 leading-relaxed text-foreground/80">
+                    Django web app with several ML classifiers; Logistic Regression reached 98% accuracy.
+                  </td>
+                  <td class="py-4 leading-relaxed text-foreground/65">
+                    English only, with no retraining pipeline or explanations for users.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="mt-8 border-l-2 border-accent bg-primary-soft py-4 pl-5 pr-5">
+            <p class="text-xs font-semibold uppercase tracking-[0.15em] text-accent">What is missing</p>
+            <p class="mt-2 text-sm leading-relaxed text-foreground/80">
+              All published fake job detection research covers English only and returns a binary verdict. No
+              study combines transformer models with SHAP/LIME explanations in this domain, and no trilingual
+              (English, Sinhala, Tamil) dataset exists from real Sri Lankan job portals.
+            </p>
+          </div>
+        </div>
+        <div
+          role="tabpanel"
+          id="literature-panel-1"
+          aria-labelledby="literature-tab-1"
+          class="mt-6 rounded-2xl bg-white p-7 shadow-sm ring-1 ring-border sm:p-9"
+          hidden
+        >
+          <p class="text-sm text-muted">Bandara H.M.N.T · IT22251664</p>
+          <p class="mt-3 max-w-4xl leading-relaxed text-foreground/80">
+            Researchers have applied machine learning, NLP and data mining to detect fraudulent job postings.
+            Most studies analyse the job advertisement itself (description, title, salary and posting
+            attributes) with classifiers such as Random Forest, Logistic Regression and SVM, rather than the
+            credibility of the employer behind it.
+          </p>
+
+          <div class="mt-8 overflow-x-auto">
+            <table class="w-full min-w-[40rem] text-left text-sm">
+              <thead class="border-b-2 border-primary/15 text-xs uppercase tracking-[0.12em] text-primary/70">
+                <tr>
+                  <th class="w-[22%] py-3 pr-6 font-semibold">Study</th>
+                  <th class="py-3 pr-6 font-semibold">Contribution</th>
+                  <th class="py-3 font-semibold">Limitation</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-border">
+                <tr class="align-top">
+                  <td class="py-4 pr-6 font-semibold text-primary">Vidros et al. (2017)</td>
+                  <td class="py-4 pr-6 leading-relaxed text-foreground/80">
+                    Introduced the public EMSCAD dataset and analysed the characteristics of fraudulent job
+                    posts.
+                  </td>
+                  <td class="py-4 leading-relaxed text-foreground/65">
+                    Focuses on advert content, not the legitimacy of the employer behind the post.
+                  </td>
+                </tr>
+                <tr class="align-top">
+                  <td class="py-4 pr-6 font-semibold text-primary">Alghamdi &amp; Alharby (2019)</td>
+                  <td class="py-4 pr-6 leading-relaxed text-foreground/80">
+                    Intelligent ML model for recruitment fraud detection using job metadata and text.
+                  </td>
+                  <td class="py-4 leading-relaxed text-foreground/65">
+                    Remains limited to job advertisement analysis.
+                  </td>
+                </tr>
+                <tr class="align-top">
+                  <td class="py-4 pr-6 font-semibold text-primary">Dutta &amp; Bandyopadhyay (2020)</td>
+                  <td class="py-4 pr-6 leading-relaxed text-foreground/80">
+                    ML classification of job text and metadata to identify fraud patterns.
+                  </td>
+                  <td class="py-4 leading-relaxed text-foreground/65">
+                    Employer identity and company credibility are not considered.
+                  </td>
+                </tr>
+                <tr class="align-top">
+                  <td class="py-4 pr-6 font-semibold text-primary">Allam et al. (2025)</td>
+                  <td class="py-4 pr-6 leading-relaxed text-foreground/80">
+                    Data balancing with ML classifiers improved fake job detection accuracy.
+                  </td>
+                  <td class="py-4 leading-relaxed text-foreground/65">
+                    Uses advertisement data rather than employer credibility.
+                  </td>
+                </tr>
+                <tr class="align-top">
+                  <td class="py-4 pr-6 font-semibold text-primary">Singh et al. (2025)</td>
+                  <td class="py-4 pr-6 leading-relaxed text-foreground/80">
+                    Showed the strong performance of Random Forest in detecting fake jobs.
+                  </td>
+                  <td class="py-4 leading-relaxed text-foreground/65">
+                    Relies heavily on textual job features.
+                  </td>
+                </tr>
+                <tr class="align-top">
+                  <td class="py-4 pr-6 font-semibold text-primary">Ansar &amp; Hussain (2025)</td>
+                  <td class="py-4 pr-6 leading-relaxed text-foreground/80">
+                    Survey showing how job scams reduce trust in online job platforms.
+                  </td>
+                  <td class="py-4 leading-relaxed text-foreground/65">
+                    Proposes no technical model for detecting fraudulent employers.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="mt-8 border-l-2 border-accent bg-primary-soft py-4 pl-5 pr-5">
+            <p class="text-xs font-semibold uppercase tracking-[0.15em] text-accent">What is missing</p>
+            <p class="mt-2 text-sm leading-relaxed text-foreground/80">
+              Employer credibility evidence (official registers, reputation and scam-report platforms, website
+              signals) is rarely combined, and most systems give only a binary label with no explanation of
+              why an employer is suspicious.
+            </p>
+          </div>
+        </div>
+        <div
+          role="tabpanel"
+          id="literature-panel-2"
+          aria-labelledby="literature-tab-2"
+          class="mt-6 rounded-2xl bg-white p-7 shadow-sm ring-1 ring-border sm:p-9"
+          hidden
+        >
+          <p class="text-sm text-muted">Kajanthan U · IT22224002</p>
+          <p class="mt-3 max-w-4xl leading-relaxed text-foreground/80">
+            Most research classifies job advertisements as fake or real, usually on the EMSCAD dataset. A
+            second strand detects scam messages on SMS or WhatsApp with BERT-based models, and a third uses
+            OCR to read scam text from screenshots. Behavioural studies have mapped the manipulation tactics
+            scammers use, but these findings have not been built into an automated detector.
+          </p>
+
+          <div class="mt-8 overflow-x-auto">
+            <table class="w-full min-w-[40rem] text-left text-sm">
+              <thead class="border-b-2 border-primary/15 text-xs uppercase tracking-[0.12em] text-primary/70">
+                <tr>
+                  <th class="w-[22%] py-3 pr-6 font-semibold">Study</th>
+                  <th class="py-3 pr-6 font-semibold">Contribution</th>
+                  <th class="py-3 font-semibold">Limitation</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-border">
+                <tr class="align-top">
+                  <td class="py-4 pr-6 font-semibold text-primary">Alghamdi &amp; Alharby (2019)</td>
+                  <td class="py-4 pr-6 leading-relaxed text-foreground/80">
+                    SVM and Random Forest on EMSCAD, reaching 97.41% accuracy on fake job ads.
+                  </td>
+                  <td class="py-4 leading-relaxed text-foreground/65">
+                    Analyses only the advert text, not recruiter–candidate conversations.
+                  </td>
+                </tr>
+                <tr class="align-top">
+                  <td class="py-4 pr-6 font-semibold text-primary">Taneja et al. (2025)</td>
+                  <td class="py-4 pr-6 leading-relaxed text-foreground/80">
+                    Fraud-BERT, a fine-tuned transformer reaching an F1 score of 0.93 on EMSCAD.
+                  </td>
+                  <td class="py-4 leading-relaxed text-foreground/65">
+                    Limited to job posts; no protection once chats move to private channels.
+                  </td>
+                </tr>
+                <tr class="align-top">
+                  <td class="py-4 pr-6 font-semibold text-primary">Jain et al. (2025)</td>
+                  <td class="py-4 pr-6 leading-relaxed text-foreground/80">
+                    BERT-based SMS smishing detection that outperformed keyword-based classifiers.
+                  </td>
+                  <td class="py-4 leading-relaxed text-foreground/65">
+                    Single platform only, with a binary scam or legitimate label.
+                  </td>
+                </tr>
+                <tr class="align-top">
+                  <td class="py-4 pr-6 font-semibold text-primary">Shinde et al. (2024)</td>
+                  <td class="py-4 pr-6 leading-relaxed text-foreground/80">
+                    OCR to extract scam text from screenshots without platform API access.
+                  </td>
+                  <td class="py-4 leading-relaxed text-foreground/65">
+                    Traditional classifiers after OCR miss paraphrased scam expressions.
+                  </td>
+                </tr>
+                <tr class="align-top">
+                  <td class="py-4 pr-6 font-semibold text-primary">Anagha et al. (2026)</td>
+                  <td class="py-4 pr-6 leading-relaxed text-foreground/80">
+                    Identified four job scam tactics: urgency, FOMO, sunk-cost influence and social proof.
+                  </td>
+                  <td class="py-4 leading-relaxed text-foreground/65">
+                    Purely theoretical; never built into a real-time detection system.
+                  </td>
+                </tr>
+                <tr class="align-top">
+                  <td class="py-4 pr-6 font-semibold text-primary">Tyszkiewicz &amp; Noor (2025)</td>
+                  <td class="py-4 pr-6 leading-relaxed text-foreground/80">
+                    SafeChat: cumulative risk scores for conversation-level scam detection on SMS.
+                  </td>
+                  <td class="py-4 leading-relaxed text-foreground/65">
+                    General scams on SMS only, without identifying the manipulation tactic.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="mt-8 border-l-2 border-accent bg-primary-soft py-4 pl-5 pr-5">
+            <p class="text-xs font-semibold uppercase tracking-[0.15em] text-accent">What is missing</p>
+            <p class="mt-2 text-sm leading-relaxed text-foreground/80">
+              No existing system analyses the recruiter–candidate conversation where money is actually lost,
+              or identifies which manipulation tactic is being used, across multiple platforms and in a way
+              non-technical job seekers can understand.
+            </p>
+          </div>
+        </div>
+        <div
+          role="tabpanel"
+          id="literature-panel-3"
+          aria-labelledby="literature-tab-3"
+          class="mt-6 rounded-2xl bg-white p-7 shadow-sm ring-1 ring-border sm:p-9"
+          hidden
+        >
+          <p class="text-sm text-muted">Methmi N P C S · IT22188618</p>
+          <p class="mt-3 max-w-4xl leading-relaxed text-foreground/80">
+            Job recommendation research matches job seekers to jobs by skills, experience and preferences,
+            using collaborative, content-based and hybrid filtering. These approaches optimise relevance and
+            accuracy but never check whether a job posting is safe, and existing risk- or trust-aware
+            recommenders target other domains rather than recruitment fraud.
+          </p>
+
+          <div class="mt-8 overflow-x-auto">
+            <table class="w-full min-w-[40rem] text-left text-sm">
+              <thead class="border-b-2 border-primary/15 text-xs uppercase tracking-[0.12em] text-primary/70">
+                <tr>
+                  <th class="w-[22%] py-3 pr-6 font-semibold">Study</th>
+                  <th class="py-3 pr-6 font-semibold">Contribution</th>
+                  <th class="py-3 font-semibold">Limitation</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-border">
+                <tr class="align-top">
+                  <td class="py-4 pr-6 font-semibold text-primary">Zhang et al. (2014)</td>
+                  <td class="py-4 pr-6 leading-relaxed text-foreground/80">
+                    Job recommender using user-based and item-based collaborative filtering.
+                  </td>
+                  <td class="py-4 leading-relaxed text-foreground/65">
+                    Cold-start problems and no check on whether postings are legitimate.
+                  </td>
+                </tr>
+                <tr class="align-top">
+                  <td class="py-4 pr-6 font-semibold text-primary">Nadar et al.</td>
+                  <td class="py-4 pr-6 leading-relaxed text-foreground/80">
+                    Content-based recommender matching profiles to jobs with TF-IDF and cosine similarity.
+                  </td>
+                  <td class="py-4 leading-relaxed text-foreground/65">
+                    Considers relevance only, not the safety of postings.
+                  </td>
+                </tr>
+                <tr class="align-top">
+                  <td class="py-4 pr-6 font-semibold text-primary">Çano &amp; Morisio (2017)</td>
+                  <td class="py-4 pr-6 leading-relaxed text-foreground/80">
+                    Reviewed hybrid recommenders that tackle sparsity and cold start.
+                  </td>
+                  <td class="py-4 leading-relaxed text-foreground/65">
+                    Focused on accuracy and ignores fraudulent job postings.
+                  </td>
+                </tr>
+                <tr class="align-top">
+                  <td class="py-4 pr-6 font-semibold text-primary">Bouneffouf (2013)</td>
+                  <td class="py-4 pr-6 leading-relaxed text-foreground/80">
+                    DRARS, a risk-aware recommender using a contextual bandit for situational risk.
+                  </td>
+                  <td class="py-4 leading-relaxed text-foreground/65">
+                    General recommendation risk only, not fraud on job platforms.
+                  </td>
+                </tr>
+                <tr class="align-top">
+                  <td class="py-4 pr-6 font-semibold text-primary">Masrom et al. (2018)</td>
+                  <td class="py-4 pr-6 leading-relaxed text-foreground/80">
+                    Trust-aware recommender using trust relationships between users.
+                  </td>
+                  <td class="py-4 leading-relaxed text-foreground/65">
+                    Covers trust between users, not fraudulent postings or employers.
+                  </td>
+                </tr>
+                <tr class="align-top">
+                  <td class="py-4 pr-6 font-semibold text-primary">Madanchian &amp; Taherdoost (2020)</td>
+                  <td class="py-4 pr-6 leading-relaxed text-foreground/80">
+                    Described TOPSIS for ranking options by distance from ideal solutions.
+                  </td>
+                  <td class="py-4 leading-relaxed text-foreground/65">
+                    General decision-making; not designed to include fraud risk.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="mt-8 border-l-2 border-accent bg-primary-soft py-4 pl-5 pr-5">
+            <p class="text-xs font-semibold uppercase tracking-[0.15em] text-accent">What is missing</p>
+            <p class="mt-2 text-sm leading-relaxed text-foreground/80">
+              No existing system brings skill matching and multiple fraud signals (fake job, employer
+              legitimacy and scam communication) together with a ranking method, so jobs are never ranked by
+              both relevance and safety.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="scope" class="scroll-mt-32 bg-primary-soft">
+        <div class="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-28">
+          <div class="mx-auto max-w-2xl text-center">
+            <span
+              class="inline-flex items-center gap-2 rounded-full bg-primary-light px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary"
+            >
+              <span class="h-1.5 w-1.5 rounded-full bg-accent"></span>
+              Project scope
+            </span>
+            <h2 class="mt-4 font-display text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+              From research gap to solution
+            </h2>
+            <p class="mt-4 text-base leading-relaxed text-muted sm:text-lg">
+              How the project moves from what is missing in existing work, to the problem we address, to the
+              system we propose.
+            </p>
+          </div>
+          <div class="mt-14 grid gap-6 lg:grid-cols-3 lg:gap-8">
+            <article
+              class="relative flex flex-col rounded-2xl p-8 transition duration-300 bg-white shadow-sm ring-1 ring-border hover:shadow-lg hover:shadow-primary/5"
+            >
+              <div class="flex items-center gap-4">
+                <span class="font-display text-sm font-bold tabular-nums text-accent">01</span>
+                <span class="h-px flex-1 bg-border"></span>
+              </div>
+              <h3 class="mt-5 font-display text-2xl font-bold text-primary">Research Gap</h3>
+              <p class="mt-3 leading-relaxed text-foreground/75">
+                Existing research and tools tackle recruitment fraud in isolated pieces. They focus mainly on
+                the text of job advertisements and treat fraud detection and job recommendation as separate
+                problems.
+              </p>
+              <ul class="mt-6 divide-y text-sm leading-relaxed divide-border text-foreground/70">
+                <li class="py-3 first:pt-0 last:pb-0">
+                  Fake job detection models work only in English and analyse only the job advert text,
+                  ignoring Sinhala and Tamil speakers, the employer behind the post and the conversation that
+                  follows.
+                </li>
+                <li class="py-3 first:pt-0 last:pb-0">
+                  Employer credibility indicators such as website domain consistency, recruiter email
+                  alignment and LinkedIn presence are rarely analysed systematically.
+                </li>
+                <li class="py-3 first:pt-0 last:pb-0">
+                  Scam message detectors work on a single platform (SMS or WhatsApp), give only a &quot;scam
+                  or not&quot; label, and don't identify the manipulation tactics scammers use.
+                </li>
+                <li class="py-3 first:pt-0 last:pb-0">
+                  Job recommendation systems rank jobs by skill relevance alone and never consider fraud risk.
+                </li>
+              </ul>
+              <span
+                class="absolute -right-[34px] top-7 z-10 hidden h-9 w-9 place-items-center rounded-full bg-white text-primary shadow-md ring-1 ring-border lg:grid"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-4 w-4"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" /></svg
+              ></span>
+            </article>
+            <article
+              class="relative flex flex-col rounded-2xl p-8 transition duration-300 bg-white shadow-sm ring-1 ring-border hover:shadow-lg hover:shadow-primary/5"
+            >
+              <div class="flex items-center gap-4">
+                <span class="font-display text-sm font-bold tabular-nums text-accent">02</span>
+                <span class="h-px flex-1 bg-border"></span>
+              </div>
+              <h3 class="mt-5 font-display text-2xl font-bold text-primary">Research Problem</h3>
+              <p class="mt-3 leading-relaxed text-foreground/75">
+                How can job seekers be protected across the entire recruitment journey (the job post, the
+                employer and the recruiter's messages) and be guided towards jobs that are both relevant and
+                safe, with explanations they can understand?
+              </p>
+              <ul class="mt-6 divide-y text-sm leading-relaxed divide-border text-foreground/70">
+                <li class="py-3 first:pt-0 last:pb-0">
+                  Fraudulent job posts look professional and get past basic moderation on popular job
+                  platforms.
+                </li>
+                <li class="py-3 first:pt-0 last:pb-0">
+                  Scammers hide behind fake or impersonated employer identities that job seekers can't easily
+                  verify.
+                </li>
+                <li class="py-3 first:pt-0 last:pb-0">
+                  Financial harm happens in private chats on WhatsApp, Telegram and SMS, through tactics like
+                  urgency pressure and fear of missing out, where no protection exists.
+                </li>
+                <li class="py-3 first:pt-0 last:pb-0">
+                  A plain &quot;fake or real&quot; label without a reason gives non-technical users little to
+                  trust or act on.
+                </li>
+              </ul>
+              <span
+                class="absolute -right-[34px] top-7 z-10 hidden h-9 w-9 place-items-center rounded-full bg-white text-primary shadow-md ring-1 ring-border lg:grid"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-4 w-4"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" /></svg
+              ></span>
+            </article>
+            <article
+              class="relative flex flex-col rounded-2xl p-8 transition duration-300 bg-primary text-white shadow-xl shadow-primary/20"
+            >
+              <div class="flex items-center gap-4">
+                <span class="font-display text-sm font-bold tabular-nums text-white/60">03</span>
+                <span class="h-px flex-1 bg-white/20"></span>
+              </div>
+              <h3 class="mt-5 font-display text-2xl font-bold text-white">Proposed Solution</h3>
+              <p class="mt-3 leading-relaxed text-white/80">
+                An AI-powered mobile ecosystem of four integrated components that checks every stage of
+                recruitment and combines their results into a single safety score, which is then used to
+                recommend safer jobs.
+              </p>
+              <ul class="mt-6 divide-y text-sm leading-relaxed divide-white/15 text-white/75">
+                <li class="py-3 first:pt-0 last:pb-0">
+                  <strong class="font-semibold text-white">Fake Job Post Detection:</strong> flags fraudulent
+                  job posts in English, Sinhala and Tamil with XLM-RoBERTa, giving a Low / Medium / High
+                  suspicion score and SHAP/LIME explanations.
+                </li>
+                <li class="py-3 first:pt-0 last:pb-0">
+                  <strong class="font-semibold text-white">Employer Legitimacy Verification:</strong> scores
+                  employer credibility with a Random Forest and multi-source evidence fusion, and explains
+                  each result through an evidence report and score breakdown.
+                </li>
+                <li class="py-3 first:pt-0 last:pb-0">
+                  <strong class="font-semibold text-white">BSTD:</strong> detects manipulation tactics in
+                  recruiter conversations in real time using DistilBERT, with OCR to read screenshots from any
+                  platform.
+                </li>
+                <li class="py-3 first:pt-0 last:pb-0">
+                  <strong class="font-semibold text-white">Fraud-Aware Recommendation:</strong> combines all
+                  the risk signals into one score and ranks jobs by both skill match and safety, using the
+                  Entropy Weight Method and TOPSIS.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="objectives" class="mx-auto max-w-7xl scroll-mt-32 px-5 py-20 sm:px-8 lg:py-28">
+        <div class="max-w-2xl">
+          <span
+            class="inline-flex items-center gap-2 rounded-full bg-primary-light px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary"
+          >
+            <span class="h-1.5 w-1.5 rounded-full bg-accent"></span>
+            Research objectives
+          </span>
+          <h2 class="mt-4 font-display text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+            Objectives by component
+          </h2>
+          <p class="mt-4 text-base leading-relaxed text-muted sm:text-lg">
+            Each team member owns one component of the system. Every component has its own novelty, main
+            objective and sub-objectives.
+          </p>
+        </div>
+
+        <div class="mt-10 rounded-2xl bg-primary px-7 py-8 text-white sm:px-10 sm:py-10">
+          <div class="flex items-center gap-4">
+            <span class="text-xs font-semibold uppercase tracking-[0.2em] text-white/60"
+              >Overall main objective</span
+            >
+            <span class="h-px flex-1 bg-white/20"></span>
+          </div>
+          <p class="mt-5 max-w-4xl font-display text-xl font-medium leading-relaxed sm:text-2xl">
+            To design and develop an AI-powered mobile ecosystem that detects recruitment fraud across job
+            posts, employers and recruiter conversations, and uses the combined fraud risk to recommend job
+            opportunities that are both relevant and safe, with clear explanations for job seekers.
+          </p>
+        </div>
+
+        <div class="mt-8 grid gap-6 lg:grid-cols-2">
+          <article
+            id="fake-job-post-detection"
+            class="flex scroll-mt-32 flex-col rounded-2xl bg-white p-7 shadow-sm ring-1 ring-border transition duration-300 hover:shadow-lg hover:shadow-primary/5 sm:p-8"
+          >
+            <div class="flex items-center gap-4">
+              <span class="font-display text-sm font-bold tabular-nums text-accent">01</span>
+              <span class="h-px flex-1 bg-border"></span>
+            </div>
+
+            <h3 class="mt-5 font-display text-xl font-bold leading-snug text-primary">
+              Multilingual Fake Job Post Detection
+            </h3>
+            <p class="mt-1.5 text-sm text-muted">Santhosh S · IT22113740</p>
+
+            <div class="mt-6 border-l-2 border-accent pl-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-accent">Novelty</p>
+              <p class="mt-2 text-sm leading-relaxed text-foreground/80">
+                The first fake job detection system for English, Sinhala and Tamil. It is trained on a new
+                trilingual dataset built from real Sri Lankan job portals, gives a three-tier Low / Medium /
+                High suspicion score instead of a plain real-or-fake verdict, and explains every prediction
+                with SHAP and LIME.
+              </p>
+            </div>
+
+            <div class="mt-6">
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-primary">Main objective</p>
+              <p class="mt-2 text-sm leading-relaxed text-foreground/80">
+                To design, develop and evaluate a multilingual AI-powered mobile application that detects fake
+                job postings in Sinhala, Tamil and English using XLM-RoBERTa, assigns a three-tier suspicion
+                score and provides SHAP/LIME-based explanations, achieving an F1-score of at least 90% across
+                all three languages.
+              </p>
+            </div>
+
+            <div class="mt-6 border-t border-border pt-6">
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-primary">Sub-objectives</p>
+              <ol class="mt-3 space-y-2.5">
+                <li class="flex gap-3 text-sm leading-relaxed text-foreground/75">
+                  <span class="w-5 shrink-0 font-semibold tabular-nums text-primary/40">1.</span>Build a
+                  trilingual fake job dataset by scraping topjobs.lk and ikman.lk and labelling each post as
+                  fake or legitimate (Cohen's Kappa ≥ 0.80).
+                </li>
+                <li class="flex gap-3 text-sm leading-relaxed text-foreground/75">
+                  <span class="w-5 shrink-0 font-semibold tabular-nums text-primary/40">2.</span>Fine-tune
+                  XLM-RoBERTa on the dataset with SMOTE-based class balancing to reach an F1-score of at least
+                  90% in every language.
+                </li>
+                <li class="flex gap-3 text-sm leading-relaxed text-foreground/75">
+                  <span class="w-5 shrink-0 font-semibold tabular-nums text-primary/40">3.</span>Design a
+                  three-tier suspicion score combining model probability, risky keywords, missing fields and
+                  free email domains.
+                </li>
+                <li class="flex gap-3 text-sm leading-relaxed text-foreground/75">
+                  <span class="w-5 shrink-0 font-semibold tabular-nums text-primary/40">4.</span>Integrate
+                  SHAP and LIME to explain the top features behind each prediction, validated with at least 30
+                  participants.
+                </li>
+                <li class="flex gap-3 text-sm leading-relaxed text-foreground/75">
+                  <span class="w-5 shrink-0 font-semibold tabular-nums text-primary/40">5.</span>Develop a
+                  React Native mobile app with a REST API backend, supporting all three languages in the
+                  interface.
+                </li>
+                <li class="flex gap-3 text-sm leading-relaxed text-foreground/75">
+                  <span class="w-5 shrink-0 font-semibold tabular-nums text-primary/40">6.</span>Evaluate the
+                  full system on a held-out test set and through a user study with at least 50 participants.
+                </li>
+              </ol>
+            </div>
+          </article>
+          <article
+            id="employer-legitimacy-verification"
+            class="flex scroll-mt-32 flex-col rounded-2xl bg-white p-7 shadow-sm ring-1 ring-border transition duration-300 hover:shadow-lg hover:shadow-primary/5 sm:p-8"
+          >
+            <div class="flex items-center gap-4">
+              <span class="font-display text-sm font-bold tabular-nums text-accent">02</span>
+              <span class="h-px flex-1 bg-border"></span>
+            </div>
+
+            <h3 class="mt-5 font-display text-xl font-bold leading-snug text-primary">
+              Employer Legitimacy Verification
+            </h3>
+            <p class="mt-1.5 text-sm text-muted">Bandara H.M.N.T · IT22251664</p>
+
+            <div class="mt-6 border-l-2 border-accent pl-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-accent">Novelty</p>
+              <p class="mt-2 text-sm leading-relaxed text-foreground/80">
+                Verifies the employer behind a job post, not just the advertisement text. The component checks
+                a company against Sri Lankan official sources (Colombo Stock Exchange, Registrar of Companies,
+                Central Bank, Board of Investment, Insurance Regulatory Commission and the Specified Business
+                Enterprises list), its reputation on review and professional platforms, and the signals on its
+                own website. A Random Forest model and a weighted fusion score combine this evidence into a
+                0–100 score and a Low, Medium or High-risk band. Every result comes with an evidence report
+                that links each statement to its source and shows how many points each layer contributed. A
+                missing registry entry is treated as “not confirmed” and not as proof of fraud, so genuine
+                small businesses are not unfairly penalised.
+              </p>
+            </div>
+
+            <div class="mt-6">
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-primary">Main objective</p>
+              <p class="mt-2 text-sm leading-relaxed text-foreground/80">
+                To design and develop an explainable, multi-source Employer Legitimacy Verification service
+                that combines registry, reputation and website evidence to classify employers by risk, with
+                weights and risk thresholds justified by held-out evidence, and to integrate it with the job
+                platform and the risk-aware job recommendation component.
+              </p>
+            </div>
+
+            <div class="mt-6 border-t border-border pt-6">
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-primary">Sub-objectives</p>
+              <ol class="mt-3 space-y-2.5">
+                <li class="flex gap-3 text-sm leading-relaxed text-foreground/75">
+                  <span class="w-5 shrink-0 font-semibold tabular-nums text-primary/40">1.</span>Review
+                  related work on employer verification and identify the gaps, such as the lack of Sri Lankan
+                  registry coverage, explainability and tested weights.
+                </li>
+                <li class="flex gap-3 text-sm leading-relaxed text-foreground/75">
+                  <span class="w-5 shrink-0 font-semibold tabular-nums text-primary/40">2.</span>Design a
+                  multi-source evidence pipeline with registry, reputation and website layers and 14
+                  structured features.
+                </li>
+                <li class="flex gap-3 text-sm leading-relaxed text-foreground/75">
+                  <span class="w-5 shrink-0 font-semibold tabular-nums text-primary/40">3.</span>Build a
+                  labelled dataset of 1,514 employers and train a Random Forest classifier, evaluated on a
+                  domain-grouped train, validation and test split (test accuracy 0.917, F1 0.935, AUC 0.973).
+                </li>
+                <li class="flex gap-3 text-sm leading-relaxed text-foreground/75">
+                  <span class="w-5 shrink-0 font-semibold tabular-nums text-primary/40">4.</span>Define the
+                  fusion score and determine its weights by experiment, and report the cost of keeping the
+                  score explainable (fraud recall 78.1% for the explainable score against 93.3% for the best
+                  weights).
+                </li>
+                <li class="flex gap-3 text-sm leading-relaxed text-foreground/75">
+                  <span class="w-5 shrink-0 font-semibold tabular-nums text-primary/40">5.</span>Define Low,
+                  Medium and High-risk bands that keep fraud out of the Low band (none of the 107 Low-band
+                  test employers was fraudulent).
+                </li>
+                <li class="flex gap-3 text-sm leading-relaxed text-foreground/75">
+                  <span class="w-5 shrink-0 font-semibold tabular-nums text-primary/40">6.</span>Expose the
+                  component as a FastAPI service, verified by 38 automated tests, that screens company
+                  registrations (Low and Medium verified automatically, High sent to an administrator with the
+                  evidence report) and supplies the employer risk to the recommendation component.
+                </li>
+                <li class="flex gap-3 text-sm leading-relaxed text-foreground/75">
+                  <span class="w-5 shrink-0 font-semibold tabular-nums text-primary/40">7.</span>Evaluate
+                  usefulness with users in the final acceptance sessions.
+                </li>
+              </ol>
+            </div>
+          </article>
+          <article
+            id="scam-communication-detection"
+            class="flex scroll-mt-32 flex-col rounded-2xl bg-white p-7 shadow-sm ring-1 ring-border transition duration-300 hover:shadow-lg hover:shadow-primary/5 sm:p-8"
+          >
+            <div class="flex items-center gap-4">
+              <span class="font-display text-sm font-bold tabular-nums text-accent">03</span>
+              <span class="h-px flex-1 bg-border"></span>
+            </div>
+
+            <h3 class="mt-5 font-display text-xl font-bold leading-snug text-primary">
+              Scam Conversation &amp; Manipulation Tactic Detection (BSTD)
+            </h3>
+            <p class="mt-1.5 text-sm text-muted">Kajanthan U · IT22224002</p>
+
+            <div class="mt-6 border-l-2 border-accent pl-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-accent">Novelty</p>
+              <p class="mt-2 text-sm leading-relaxed text-foreground/80">
+                The first system to detect psychological manipulation tactics (urgency pressure, FOMO,
+                sunk-cost influence and social proof) in real-time recruiter–candidate conversations. It turns
+                the behavioural findings of Anagha et al. into a working detector with plain-language
+                warnings, and supports three input modes: a built-in recruiter chat analysed as messages
+                arrive, pasted messages from WhatsApp, Telegram, SMS, LinkedIn or email, and uploaded
+                screenshots read with OCR.
+              </p>
+            </div>
+
+            <div class="mt-6">
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-primary">Main objective</p>
+              <p class="mt-2 text-sm leading-relaxed text-foreground/80">
+                To design, develop and evaluate a Behaviour-Inspired Semantic Tactic Detection (BSTD) system
+                that analyses recruiter–candidate messages with NLP, detects manipulation tactics in real time
+                and delivers explainable warnings, achieving an F1 score of at least 0.90 and a SUS score of
+                70 or above.
+              </p>
+            </div>
+
+            <div class="mt-6 border-t border-border pt-6">
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-primary">Sub-objectives</p>
+              <ol class="mt-3 space-y-2.5">
+                <li class="flex gap-3 text-sm leading-relaxed text-foreground/75">
+                  <span class="w-5 shrink-0 font-semibold tabular-nums text-primary/40">1.</span>Review
+                  existing literature on recruitment fraud, scam communication and manipulation tactics to
+                  identify research gaps.
+                </li>
+                <li class="flex gap-3 text-sm leading-relaxed text-foreground/75">
+                  <span class="w-5 shrink-0 font-semibold tabular-nums text-primary/40">2.</span>Build and
+                  annotate a multi-platform dataset of recruiter–candidate scam messages with scam and tactic
+                  labels.
+                </li>
+                <li class="flex gap-3 text-sm leading-relaxed text-foreground/75">
+                  <span class="w-5 shrink-0 font-semibold tabular-nums text-primary/40">3.</span>Implement a
+                  TF-IDF and Logistic Regression baseline to benchmark performance.
+                </li>
+                <li class="flex gap-3 text-sm leading-relaxed text-foreground/75">
+                  <span class="w-5 shrink-0 font-semibold tabular-nums text-primary/40">4.</span>Fine-tune a
+                  DistilBERT multi-label classifier to identify the four manipulation tactics.
+                </li>
+                <li class="flex gap-3 text-sm leading-relaxed text-foreground/75">
+                  <span class="w-5 shrink-0 font-semibold tabular-nums text-primary/40">5.</span>Develop an
+                  OCR screenshot pipeline for cross-platform detection without platform API access.
+                </li>
+                <li class="flex gap-3 text-sm leading-relaxed text-foreground/75">
+                  <span class="w-5 shrink-0 font-semibold tabular-nums text-primary/40">6.</span>Deploy a
+                  mobile app with a FastAPI REST API that delivers real-time results and plain-language
+                  warnings.
+                </li>
+              </ol>
+            </div>
+          </article>
+          <article
+            id="fraud-aware-job-recommendation"
+            class="flex scroll-mt-32 flex-col rounded-2xl bg-white p-7 shadow-sm ring-1 ring-border transition duration-300 hover:shadow-lg hover:shadow-primary/5 sm:p-8"
+          >
+            <div class="flex items-center gap-4">
+              <span class="font-display text-sm font-bold tabular-nums text-accent">04</span>
+              <span class="h-px flex-1 bg-border"></span>
+            </div>
+
+            <h3 class="mt-5 font-display text-xl font-bold leading-snug text-primary">
+              Fraud-Aware Job Recommendation &amp; Ranking
+            </h3>
+            <p class="mt-1.5 text-sm text-muted">Methmi N P C S · IT22188618</p>
+
+            <div class="mt-6 border-l-2 border-accent pl-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-accent">Novelty</p>
+              <p class="mt-2 text-sm leading-relaxed text-foreground/80">
+                Combines skill relevance with fraud risk from all three detection modules. Risk indicators are
+                aggregated with the Entropy Weight Method into a safety score, and jobs are ranked with TOPSIS
+                so recommendations are both relevant and safe.
+              </p>
+            </div>
+
+            <div class="mt-6">
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-primary">Main objective</p>
+              <p class="mt-2 text-sm leading-relaxed text-foreground/80">
+                To develop a risk-aware job recommendation and ranking model that integrates skill matching
+                and fraud risk analysis to recommend relevant and safer job opportunities for job seekers.
+              </p>
+            </div>
+
+            <div class="mt-6 border-t border-border pt-6">
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-primary">Sub-objectives</p>
+              <ol class="mt-3 space-y-2.5">
+                <li class="flex gap-3 text-sm leading-relaxed text-foreground/75">
+                  <span class="w-5 shrink-0 font-semibold tabular-nums text-primary/40">1.</span>Match user
+                  profiles with job descriptions using TF-IDF and cosine similarity.
+                </li>
+                <li class="flex gap-3 text-sm leading-relaxed text-foreground/75">
+                  <span class="w-5 shrink-0 font-semibold tabular-nums text-primary/40">2.</span>Convert
+                  results from fake job, employer legitimacy and scam communication detection into risk
+                  indicators.
+                </li>
+                <li class="flex gap-3 text-sm leading-relaxed text-foreground/75">
+                  <span class="w-5 shrink-0 font-semibold tabular-nums text-primary/40">3.</span>Calculate an
+                  overall risk score for each job using the Entropy Weight Method.
+                </li>
+                <li class="flex gap-3 text-sm leading-relaxed text-foreground/75">
+                  <span class="w-5 shrink-0 font-semibold tabular-nums text-primary/40">4.</span>Convert the
+                  risk score into a safety score representing job trustworthiness.
+                </li>
+                <li class="flex gap-3 text-sm leading-relaxed text-foreground/75">
+                  <span class="w-5 shrink-0 font-semibold tabular-nums text-primary/40">5.</span>Rank
+                  candidate jobs with TOPSIS using both skill match and safety scores.
+                </li>
+                <li class="flex gap-3 text-sm leading-relaxed text-foreground/75">
+                  <span class="w-5 shrink-0 font-semibold tabular-nums text-primary/40">6.</span>Generate
+                  final recommendations that balance relevance and safety.
+                </li>
+              </ol>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="methodology" class="mx-auto max-w-7xl scroll-mt-32 px-5 py-20 sm:px-8 lg:py-28">
+        <div class="max-w-2xl">
+          <span
+            class="inline-flex items-center gap-2 rounded-full bg-primary-light px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary"
+          >
+            <span class="h-1.5 w-1.5 rounded-full bg-accent"></span>
+            System overview
+          </span>
+          <h2 class="mt-4 font-display text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+            Overall system architecture
+          </h2>
+          <p class="mt-4 text-base leading-relaxed text-muted sm:text-lg">
+            A high-level view of how the four components work together as one system.
+          </p>
+        </div>
+
+        <div class="mt-10 overflow-hidden rounded-2xl bg-white p-4 shadow-sm ring-1 ring-border sm:p-6">
+          <a
+            href="images/diagrams/architecture.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group block"
+          >
+            <img
+              src="images/diagrams/architecture.jpg"
+              alt="Overall system architecture diagram"
+              width="983"
+              height="1024"
+              loading="lazy"
+              class="mx-auto h-auto w-full max-w-[min(72vh,45rem)]"
+            />
+            <span
+              class="mt-4 flex items-center justify-center gap-1.5 text-sm font-medium text-primary group-hover:underline"
+            >
+              Open full size
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-4 w-4"
+                aria-hidden="true"
+              >
+                <path d="M7 7h10v10" />
+                <path d="M7 17 17 7" />
+              </svg>
+            </span>
+          </a>
+        </div>
+
+        <div class="mt-20">
+          <div class="max-w-2xl">
+            <span
+              class="inline-flex items-center gap-2 rounded-full bg-primary-light px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary"
+            >
+              <span class="h-1.5 w-1.5 rounded-full bg-accent"></span>
+              Methodologies
+            </span>
+            <h2 class="mt-4 font-display text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+              How each component is built
+            </h2>
+            <p class="mt-4 text-base leading-relaxed text-muted sm:text-lg">
+              The approach, process and technologies used for each of the four components.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-10 space-y-6">
+          <article
+            id="methodology-fake-job-post-detection"
+            class="grid scroll-mt-32 gap-10 rounded-2xl bg-white p-7 shadow-sm ring-1 ring-border transition duration-300 hover:shadow-lg hover:shadow-primary/5 sm:p-9 lg:grid-cols-[1.1fr_1fr] lg:gap-14"
+          >
+            <div>
+              <div class="flex items-center gap-4">
+                <span class="font-display text-sm font-bold tabular-nums text-accent">01</span>
+                <span class="text-xs font-semibold uppercase tracking-[0.15em] text-muted">Methodology</span>
+                <span class="h-px flex-1 bg-border"></span>
+              </div>
+
+              <h3 class="mt-5 font-display text-xl font-bold leading-snug text-primary sm:text-2xl">
+                Multilingual Fake Job Post Detection
+              </h3>
+              <p class="mt-1.5 text-sm text-muted">Santhosh S · IT22113740</p>
+
+              <p class="mt-6 leading-relaxed text-foreground/80">
+                Following Design Science Research, job posts scraped from Sri Lankan portals are labelled and
+                used to fine-tune XLM-RoBERTa. A weighted suspicion score and SHAP/LIME explanations are
+                returned to the mobile app, with Tesseract OCR handling image-based posts such as WhatsApp
+                screenshots.
+              </p>
+
+              <div class="mt-8 border-t border-border pt-6">
+                <p class="text-xs font-semibold uppercase tracking-[0.15em] text-primary">Technologies</p>
+                <dl class="mt-4 space-y-3">
+                  <div class="grid gap-1.5 sm:grid-cols-[9.5rem_1fr] sm:gap-4">
+                    <dt class="pt-1 text-xs font-medium text-muted">Data</dt>
+                    <dd class="flex flex-wrap gap-1.5">
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >Scrapy</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >Selenium</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >Tesseract OCR</span
+                      >
+                    </dd>
+                  </div>
+                  <div class="grid gap-1.5 sm:grid-cols-[9.5rem_1fr] sm:gap-4">
+                    <dt class="pt-1 text-xs font-medium text-muted">Model</dt>
+                    <dd class="flex flex-wrap gap-1.5">
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >Python</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >Hugging Face</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >XLM-RoBERTa</span
+                      >
+                    </dd>
+                  </div>
+                  <div class="grid gap-1.5 sm:grid-cols-[9.5rem_1fr] sm:gap-4">
+                    <dt class="pt-1 text-xs font-medium text-muted">Explainability</dt>
+                    <dd class="flex flex-wrap gap-1.5">
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >SHAP</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >LIME</span
+                      >
+                    </dd>
+                  </div>
+                  <div class="grid gap-1.5 sm:grid-cols-[9.5rem_1fr] sm:gap-4">
+                    <dt class="pt-1 text-xs font-medium text-muted">App &amp; infrastructure</dt>
+                    <dd class="flex flex-wrap gap-1.5">
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >FastAPI</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >React Native</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >AWS</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >MongoDB Atlas</span
+                      >
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+
+            <div class="lg:border-l lg:border-border lg:pl-14">
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-primary">Process</p>
+              <ol class="mt-4 divide-y divide-border">
+                <li class="flex gap-4 py-3.5 first:pt-0 last:pb-0">
+                  <span class="w-6 shrink-0 font-display text-sm font-bold tabular-nums text-primary/40"
+                    >01</span
+                  >
+                  <span class="text-[15px] leading-relaxed text-foreground/85"
+                    >Trilingual dataset scraping (Scrapy, Selenium) and manual labelling</span
+                  >
+                </li>
+                <li class="flex gap-4 py-3.5 first:pt-0 last:pb-0">
+                  <span class="w-6 shrink-0 font-display text-sm font-bold tabular-nums text-primary/40"
+                    >02</span
+                  >
+                  <span class="text-[15px] leading-relaxed text-foreground/85"
+                    >Class balancing with SMOTE-ENN</span
+                  >
+                </li>
+                <li class="flex gap-4 py-3.5 first:pt-0 last:pb-0">
+                  <span class="w-6 shrink-0 font-display text-sm font-bold tabular-nums text-primary/40"
+                    >03</span
+                  >
+                  <span class="text-[15px] leading-relaxed text-foreground/85"
+                    >XLM-RoBERTa fine-tuning for fake or legitimate classification</span
+                  >
+                </li>
+                <li class="flex gap-4 py-3.5 first:pt-0 last:pb-0">
+                  <span class="w-6 shrink-0 font-display text-sm font-bold tabular-nums text-primary/40"
+                    >04</span
+                  >
+                  <span class="text-[15px] leading-relaxed text-foreground/85"
+                    >Three-tier suspicion scoring with fuzzy logic (Low / Medium / High)</span
+                  >
+                </li>
+                <li class="flex gap-4 py-3.5 first:pt-0 last:pb-0">
+                  <span class="w-6 shrink-0 font-display text-sm font-bold tabular-nums text-primary/40"
+                    >05</span
+                  >
+                  <span class="text-[15px] leading-relaxed text-foreground/85"
+                    >SHAP and LIME explanations in the user's language</span
+                  >
+                </li>
+                <li class="flex gap-4 py-3.5 first:pt-0 last:pb-0">
+                  <span class="w-6 shrink-0 font-display text-sm font-bold tabular-nums text-primary/40"
+                    >06</span
+                  >
+                  <span class="text-[15px] leading-relaxed text-foreground/85"
+                    >Evaluation: F1 ≥ 90%, ROC-AUC, SUS &gt; 70 user study</span
+                  >
+                </li>
+              </ol>
+            </div>
+          </article>
+          <article
+            id="methodology-employer-legitimacy-verification"
+            class="grid scroll-mt-32 gap-10 rounded-2xl bg-white p-7 shadow-sm ring-1 ring-border transition duration-300 hover:shadow-lg hover:shadow-primary/5 sm:p-9 lg:grid-cols-[1.1fr_1fr] lg:gap-14"
+          >
+            <div>
+              <div class="flex items-center gap-4">
+                <span class="font-display text-sm font-bold tabular-nums text-accent">02</span>
+                <span class="text-xs font-semibold uppercase tracking-[0.15em] text-muted">Methodology</span>
+                <span class="h-px flex-1 bg-border"></span>
+              </div>
+
+              <h3 class="mt-5 font-display text-xl font-bold leading-snug text-primary sm:text-2xl">
+                Employer Legitimacy Verification
+              </h3>
+              <p class="mt-1.5 text-sm text-muted">Bandara H.M.N.T · IT22251664</p>
+
+              <p class="mt-6 leading-relaxed text-foreground/80">
+                Evidence about an employer is collected from Sri Lankan registers, review platforms and the
+                company website, turned into 14 structured features, and scored by a Random Forest. The model
+                score is combined with the evidence of each layer by a weighted fusion into a 0–100 score and
+                a Low, Medium or High-risk band, and the result is returned with an evidence report through a
+                REST service used by the mobile app and the platform.
+              </p>
+
+              <div class="mt-8 border-t border-border pt-6">
+                <p class="text-xs font-semibold uppercase tracking-[0.15em] text-primary">Technologies</p>
+                <dl class="mt-4 space-y-3">
+                  <div class="grid gap-1.5 sm:grid-cols-[9.5rem_1fr] sm:gap-4">
+                    <dt class="pt-1 text-xs font-medium text-muted">Data</dt>
+                    <dd class="flex flex-wrap gap-1.5">
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >Pandas</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >NumPy</span
+                      >
+                    </dd>
+                  </div>
+                  <div class="grid gap-1.5 sm:grid-cols-[9.5rem_1fr] sm:gap-4">
+                    <dt class="pt-1 text-xs font-medium text-muted">Model</dt>
+                    <dd class="flex flex-wrap gap-1.5">
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >Python</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >scikit-learn</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >joblib</span
+                      >
+                    </dd>
+                  </div>
+                  <div class="grid gap-1.5 sm:grid-cols-[9.5rem_1fr] sm:gap-4">
+                    <dt class="pt-1 text-xs font-medium text-muted">Evidence collection</dt>
+                    <dd class="flex flex-wrap gap-1.5">
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >Requests</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >BeautifulSoup</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >Selenium</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >duckduckgo-search</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >python-whois</span
+                      >
+                    </dd>
+                  </div>
+                  <div class="grid gap-1.5 sm:grid-cols-[9.5rem_1fr] sm:gap-4">
+                    <dt class="pt-1 text-xs font-medium text-muted">Service</dt>
+                    <dd class="flex flex-wrap gap-1.5">
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >FastAPI</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >Uvicorn</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >Pydantic</span
+                      >
+                    </dd>
+                  </div>
+                  <div class="grid gap-1.5 sm:grid-cols-[9.5rem_1fr] sm:gap-4">
+                    <dt class="pt-1 text-xs font-medium text-muted">Testing</dt>
+                    <dd class="flex flex-wrap gap-1.5">
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >pytest</span
+                      >
+                    </dd>
+                  </div>
+                  <div class="grid gap-1.5 sm:grid-cols-[9.5rem_1fr] sm:gap-4">
+                    <dt class="pt-1 text-xs font-medium text-muted">App and platform</dt>
+                    <dd class="flex flex-wrap gap-1.5">
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >React Native (Expo)</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >Node.js backend</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >MongoDB</span
+                      >
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+
+            <div class="lg:border-l lg:border-border lg:pl-14">
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-primary">Process</p>
+              <ol class="mt-4 divide-y divide-border">
+                <li class="flex gap-4 py-3.5 first:pt-0 last:pb-0">
+                  <span class="w-6 shrink-0 font-display text-sm font-bold tabular-nums text-primary/40"
+                    >01</span
+                  >
+                  <span class="text-[15px] leading-relaxed text-foreground/85"
+                    >Review related work and identify the gaps in employer verification.</span
+                  >
+                </li>
+                <li class="flex gap-4 py-3.5 first:pt-0 last:pb-0">
+                  <span class="w-6 shrink-0 font-display text-sm font-bold tabular-nums text-primary/40"
+                    >02</span
+                  >
+                  <span class="text-[15px] leading-relaxed text-foreground/85"
+                    >Design the three evidence layers (registry, reputation, website) and build a labelled
+                    dataset of 1,514 employers (978 genuine and 536 fraudulent) from public sources.</span
+                  >
+                </li>
+                <li class="flex gap-4 py-3.5 first:pt-0 last:pb-0">
+                  <span class="w-6 shrink-0 font-display text-sm font-bold tabular-nums text-primary/40"
+                    >03</span
+                  >
+                  <span class="text-[15px] leading-relaxed text-foreground/85"
+                    >Engineer 14 structured features and train a Random Forest on a domain-grouped train,
+                    validation and test split.</span
+                  >
+                </li>
+                <li class="flex gap-4 py-3.5 first:pt-0 last:pb-0">
+                  <span class="w-6 shrink-0 font-display text-sm font-bold tabular-nums text-primary/40"
+                    >04</span
+                  >
+                  <span class="text-[15px] leading-relaxed text-foreground/85"
+                    >Determine the fusion weights and the risk-band boundaries by experimenting on the
+                    validation data, then evaluate once on the test data with accuracy, precision, recall, F1,
+                    AUC and confidence intervals.</span
+                  >
+                </li>
+                <li class="flex gap-4 py-3.5 first:pt-0 last:pb-0">
+                  <span class="w-6 shrink-0 font-display text-sm font-bold tabular-nums text-primary/40"
+                    >05</span
+                  >
+                  <span class="text-[15px] leading-relaxed text-foreground/85"
+                    >Build the evidence report and expose the component as a FastAPI service, verified with 38
+                    automated unit tests and scenario tests.</span
+                  >
+                </li>
+                <li class="flex gap-4 py-3.5 first:pt-0 last:pb-0">
+                  <span class="w-6 shrink-0 font-display text-sm font-bold tabular-nums text-primary/40"
+                    >06</span
+                  >
+                  <span class="text-[15px] leading-relaxed text-foreground/85"
+                    >Integrate the service with the platform for company registration screening and with the
+                    recommendation component, and validate it in user acceptance sessions.</span
+                  >
+                </li>
+              </ol>
+            </div>
+          </article>
+          <article
+            id="methodology-scam-communication-detection"
+            class="grid scroll-mt-32 gap-10 rounded-2xl bg-white p-7 shadow-sm ring-1 ring-border transition duration-300 hover:shadow-lg hover:shadow-primary/5 sm:p-9 lg:grid-cols-[1.1fr_1fr] lg:gap-14"
+          >
+            <div>
+              <div class="flex items-center gap-4">
+                <span class="font-display text-sm font-bold tabular-nums text-accent">03</span>
+                <span class="text-xs font-semibold uppercase tracking-[0.15em] text-muted">Methodology</span>
+                <span class="h-px flex-1 bg-border"></span>
+              </div>
+
+              <h3 class="mt-5 font-display text-xl font-bold leading-snug text-primary sm:text-2xl">
+                Scam Conversation &amp; Manipulation Tactic Detection (BSTD)
+              </h3>
+              <p class="mt-1.5 text-sm text-muted">Kajanthan U · IT22224002</p>
+
+              <p class="mt-6 leading-relaxed text-foreground/80">
+                Following Design Science Research, a fine-tuned DistilBERT model performs scam classification
+                and multi-label tactic detection on messages from a built-in chat, pasted text or
+                OCR-processed screenshots, with an explanation engine generating plain-language warnings.
+              </p>
+
+              <div class="mt-8 border-t border-border pt-6">
+                <p class="text-xs font-semibold uppercase tracking-[0.15em] text-primary">Technologies</p>
+                <dl class="mt-4 space-y-3">
+                  <div class="grid gap-1.5 sm:grid-cols-[9.5rem_1fr] sm:gap-4">
+                    <dt class="pt-1 text-xs font-medium text-muted">Data</dt>
+                    <dd class="flex flex-wrap gap-1.5">
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >OpenCV</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >Tesseract OCR</span
+                      >
+                    </dd>
+                  </div>
+                  <div class="grid gap-1.5 sm:grid-cols-[9.5rem_1fr] sm:gap-4">
+                    <dt class="pt-1 text-xs font-medium text-muted">Model</dt>
+                    <dd class="flex flex-wrap gap-1.5">
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >Python</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >Hugging Face</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >DistilBERT</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >Scikit-learn</span
+                      >
+                    </dd>
+                  </div>
+                  <div class="grid gap-1.5 sm:grid-cols-[9.5rem_1fr] sm:gap-4">
+                    <dt class="pt-1 text-xs font-medium text-muted">App &amp; infrastructure</dt>
+                    <dd class="flex flex-wrap gap-1.5">
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >FastAPI</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >React Native</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >MongoDB Atlas</span
+                      >
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+
+            <div class="lg:border-l lg:border-border lg:pl-14">
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-primary">Process</p>
+              <ol class="mt-4 divide-y divide-border">
+                <li class="flex gap-4 py-3.5 first:pt-0 last:pb-0">
+                  <span class="w-6 shrink-0 font-display text-sm font-bold tabular-nums text-primary/40"
+                    >01</span
+                  >
+                  <span class="text-[15px] leading-relaxed text-foreground/85"
+                    >Dataset construction and annotation (Cohen's Kappa ≥ 0.80)</span
+                  >
+                </li>
+                <li class="flex gap-4 py-3.5 first:pt-0 last:pb-0">
+                  <span class="w-6 shrink-0 font-display text-sm font-bold tabular-nums text-primary/40"
+                    >02</span
+                  >
+                  <span class="text-[15px] leading-relaxed text-foreground/85"
+                    >TF-IDF and Logistic Regression baseline model</span
+                  >
+                </li>
+                <li class="flex gap-4 py-3.5 first:pt-0 last:pb-0">
+                  <span class="w-6 shrink-0 font-display text-sm font-bold tabular-nums text-primary/40"
+                    >03</span
+                  >
+                  <span class="text-[15px] leading-relaxed text-foreground/85"
+                    >DistilBERT fine-tuning for scam and tactic classification</span
+                  >
+                </li>
+                <li class="flex gap-4 py-3.5 first:pt-0 last:pb-0">
+                  <span class="w-6 shrink-0 font-display text-sm font-bold tabular-nums text-primary/40"
+                    >04</span
+                  >
+                  <span class="text-[15px] leading-relaxed text-foreground/85"
+                    >OCR screenshot pipeline with OpenCV and Tesseract</span
+                  >
+                </li>
+                <li class="flex gap-4 py-3.5 first:pt-0 last:pb-0">
+                  <span class="w-6 shrink-0 font-display text-sm font-bold tabular-nums text-primary/40"
+                    >05</span
+                  >
+                  <span class="text-[15px] leading-relaxed text-foreground/85"
+                    >Explanation engine mapping tactics to plain-language warnings</span
+                  >
+                </li>
+                <li class="flex gap-4 py-3.5 first:pt-0 last:pb-0">
+                  <span class="w-6 shrink-0 font-display text-sm font-bold tabular-nums text-primary/40"
+                    >06</span
+                  >
+                  <span class="text-[15px] leading-relaxed text-foreground/85"
+                    >Evaluation: F1 ≥ 0.90 and SUS ≥ 70 user study</span
+                  >
+                </li>
+              </ol>
+            </div>
+          </article>
+          <article
+            id="methodology-fraud-aware-job-recommendation"
+            class="grid scroll-mt-32 gap-10 rounded-2xl bg-white p-7 shadow-sm ring-1 ring-border transition duration-300 hover:shadow-lg hover:shadow-primary/5 sm:p-9 lg:grid-cols-[1.1fr_1fr] lg:gap-14"
+          >
+            <div>
+              <div class="flex items-center gap-4">
+                <span class="font-display text-sm font-bold tabular-nums text-accent">04</span>
+                <span class="text-xs font-semibold uppercase tracking-[0.15em] text-muted">Methodology</span>
+                <span class="h-px flex-1 bg-border"></span>
+              </div>
+
+              <h3 class="mt-5 font-display text-xl font-bold leading-snug text-primary sm:text-2xl">
+                Fraud-Aware Job Recommendation &amp; Ranking
+              </h3>
+              <p class="mt-1.5 text-sm text-muted">Methmi N P C S · IT22188618</p>
+
+              <p class="mt-6 leading-relaxed text-foreground/80">
+                Using a Design Science approach, candidate jobs are found through skill matching, their fraud
+                risk is aggregated from the other three components, and the TOPSIS multi-criteria method ranks
+                them by skill match and safety.
+              </p>
+
+              <div class="mt-8 border-t border-border pt-6">
+                <p class="text-xs font-semibold uppercase tracking-[0.15em] text-primary">Technologies</p>
+                <dl class="mt-4 space-y-3">
+                  <div class="grid gap-1.5 sm:grid-cols-[9.5rem_1fr] sm:gap-4">
+                    <dt class="pt-1 text-xs font-medium text-muted">Data</dt>
+                    <dd class="flex flex-wrap gap-1.5">
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >Pandas</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >NumPy</span
+                      >
+                    </dd>
+                  </div>
+                  <div class="grid gap-1.5 sm:grid-cols-[9.5rem_1fr] sm:gap-4">
+                    <dt class="pt-1 text-xs font-medium text-muted">Model</dt>
+                    <dd class="flex flex-wrap gap-1.5">
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >Python</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >Scikit-learn</span
+                      >
+                    </dd>
+                  </div>
+                  <div class="grid gap-1.5 sm:grid-cols-[9.5rem_1fr] sm:gap-4">
+                    <dt class="pt-1 text-xs font-medium text-muted">App &amp; infrastructure</dt>
+                    <dd class="flex flex-wrap gap-1.5">
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >FastAPI</span
+                      >
+                      <span
+                        class="rounded-md border border-border px-2 py-0.5 text-[13px] font-medium text-foreground/80"
+                        >MongoDB Atlas</span
+                      >
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+
+            <div class="lg:border-l lg:border-border lg:pl-14">
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-primary">Process</p>
+              <ol class="mt-4 divide-y divide-border">
+                <li class="flex gap-4 py-3.5 first:pt-0 last:pb-0">
+                  <span class="w-6 shrink-0 font-display text-sm font-bold tabular-nums text-primary/40"
+                    >01</span
+                  >
+                  <span class="text-[15px] leading-relaxed text-foreground/85"
+                    >Skill matching with TF-IDF and cosine similarity</span
+                  >
+                </li>
+                <li class="flex gap-4 py-3.5 first:pt-0 last:pb-0">
+                  <span class="w-6 shrink-0 font-display text-sm font-bold tabular-nums text-primary/40"
+                    >02</span
+                  >
+                  <span class="text-[15px] leading-relaxed text-foreground/85"
+                    >Candidate job selection from top matches</span
+                  >
+                </li>
+                <li class="flex gap-4 py-3.5 first:pt-0 last:pb-0">
+                  <span class="w-6 shrink-0 font-display text-sm font-bold tabular-nums text-primary/40"
+                    >03</span
+                  >
+                  <span class="text-[15px] leading-relaxed text-foreground/85"
+                    >Collecting risk indicators from the three detection modules</span
+                  >
+                </li>
+                <li class="flex gap-4 py-3.5 first:pt-0 last:pb-0">
+                  <span class="w-6 shrink-0 font-display text-sm font-bold tabular-nums text-primary/40"
+                    >04</span
+                  >
+                  <span class="text-[15px] leading-relaxed text-foreground/85"
+                    >Risk score calculation with the Entropy Weight Method</span
+                  >
+                </li>
+                <li class="flex gap-4 py-3.5 first:pt-0 last:pb-0">
+                  <span class="w-6 shrink-0 font-display text-sm font-bold tabular-nums text-primary/40"
+                    >05</span
+                  >
+                  <span class="text-[15px] leading-relaxed text-foreground/85"
+                    >Safety score conversion (1 − risk score)</span
+                  >
+                </li>
+                <li class="flex gap-4 py-3.5 first:pt-0 last:pb-0">
+                  <span class="w-6 shrink-0 font-display text-sm font-bold tabular-nums text-primary/40"
+                    >06</span
+                  >
+                  <span class="text-[15px] leading-relaxed text-foreground/85"
+                    >TOPSIS ranking and safe job recommendations</span
+                  >
+                </li>
+              </ol>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="technologies" class="scroll-mt-32 bg-primary-soft">
+        <div class="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:py-28">
+          <div class="max-w-2xl">
+            <span
+              class="inline-flex items-center gap-2 rounded-full bg-primary-light px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary"
+            >
+              <span class="h-1.5 w-1.5 rounded-full bg-accent"></span>
+              Technologies used
+            </span>
+            <h2 class="mt-4 font-display text-3xl font-bold tracking-tight text-primary sm:text-4xl">
+              Technology stack
+            </h2>
+            <p class="mt-4 text-base leading-relaxed text-muted sm:text-lg">
+              The tools and frameworks used to build the system.
+            </p>
+          </div>
+
+          <dl
+            class="mt-10 divide-y divide-border rounded-2xl bg-white px-6 shadow-sm ring-1 ring-border sm:px-8"
+          >
+            <div class="grid gap-3 py-6 md:grid-cols-[11rem_1fr] md:gap-8">
+              <dt class="pt-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-primary">Data</dt>
+              <dd class="flex flex-wrap gap-2">
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >Scrapy</span
+                >
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >Selenium</span
+                >
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >Tesseract OCR</span
+                >
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >Pandas</span
+                >
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >NumPy</span
+                >
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >OpenCV</span
+                >
+              </dd>
+            </div>
+            <div class="grid gap-3 py-6 md:grid-cols-[11rem_1fr] md:gap-8">
+              <dt class="pt-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-primary">Model</dt>
+              <dd class="flex flex-wrap gap-2">
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >Python</span
+                >
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >Hugging Face</span
+                >
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >XLM-RoBERTa</span
+                >
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >scikit-learn</span
+                >
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >joblib</span
+                >
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >DistilBERT</span
+                >
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >Scikit-learn</span
+                >
+              </dd>
+            </div>
+            <div class="grid gap-3 py-6 md:grid-cols-[11rem_1fr] md:gap-8">
+              <dt class="pt-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-primary">
+                Explainability
+              </dt>
+              <dd class="flex flex-wrap gap-2">
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >SHAP</span
+                >
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >LIME</span
+                >
+              </dd>
+            </div>
+            <div class="grid gap-3 py-6 md:grid-cols-[11rem_1fr] md:gap-8">
+              <dt class="pt-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-primary">
+                App &amp; infrastructure
+              </dt>
+              <dd class="flex flex-wrap gap-2">
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >FastAPI</span
+                >
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >React Native</span
+                >
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >AWS</span
+                >
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >MongoDB Atlas</span
+                >
+              </dd>
+            </div>
+            <div class="grid gap-3 py-6 md:grid-cols-[11rem_1fr] md:gap-8">
+              <dt class="pt-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-primary">
+                Evidence collection
+              </dt>
+              <dd class="flex flex-wrap gap-2">
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >Requests</span
+                >
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >BeautifulSoup</span
+                >
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >Selenium</span
+                >
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >duckduckgo-search</span
+                >
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >python-whois</span
+                >
+              </dd>
+            </div>
+            <div class="grid gap-3 py-6 md:grid-cols-[11rem_1fr] md:gap-8">
+              <dt class="pt-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-primary">Service</dt>
+              <dd class="flex flex-wrap gap-2">
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >FastAPI</span
+                >
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >Uvicorn</span
+                >
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >Pydantic</span
+                >
+              </dd>
+            </div>
+            <div class="grid gap-3 py-6 md:grid-cols-[11rem_1fr] md:gap-8">
+              <dt class="pt-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-primary">Testing</dt>
+              <dd class="flex flex-wrap gap-2">
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >pytest</span
+                >
+              </dd>
+            </div>
+            <div class="grid gap-3 py-6 md:grid-cols-[11rem_1fr] md:gap-8">
+              <dt class="pt-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-primary">
+                App and platform
+              </dt>
+              <dd class="flex flex-wrap gap-2">
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >React Native (Expo)</span
+                >
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >Node.js backend</span
+                >
+                <span
+                  class="rounded-md border border-border bg-white px-3 py-1.5 text-sm font-medium text-foreground/85"
+                  >MongoDB</span
+                >
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+    </main>
+
+    <footer class="relative overflow-hidden bg-primary-deep text-white/80">
+      <div
+        class="pointer-events-none absolute -top-32 right-0 h-72 w-72 rounded-full bg-accent/20 blur-3xl"
+      ></div>
+      <div class="relative mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-8 md:grid-cols-[1.5fr_1fr_1fr]">
+        <div>
+          <div class="flex items-center gap-2.5">
+            <span class="grid h-9 w-9 place-items-center rounded-xl bg-white text-primary"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-5 w-5"
+                aria-hidden="true"
+              >
+                <path
+                  d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+                />
+                <path d="M22 10v6" />
+                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></svg
+            ></span>
+            <span class="font-display text-lg font-bold text-white">Research Portfolio</span>
+          </div>
+          <p class="mt-4 max-w-sm text-sm leading-relaxed text-white/60">
+            AI Ecosystem for Fake Job Scam Detection and Fraud-Aware Job Recommendation
+          </p>
+          <p class="mt-2 text-sm text-white/60">
+            Faculty of Computing, Sri Lanka Institute of Information Technology
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-display text-sm font-semibold uppercase tracking-wider text-white">Explore</h3>
+          <ul class="mt-4 grid grid-cols-2 gap-2 text-sm">
+            <li><a href="index.html" class="text-white/60 transition-colors hover:text-white">Home</a></li>
+            <li><a href="domain.html" class="text-white/60 transition-colors hover:text-white">Domain</a></li>
+            <li>
+              <a href="milestones.html" class="text-white/60 transition-colors hover:text-white"
+                >Milestones</a
+              >
+            </li>
+            <li>
+              <a href="documents.html" class="text-white/60 transition-colors hover:text-white">Documents</a>
+            </li>
+            <li>
+              <a href="presentations.html" class="text-white/60 transition-colors hover:text-white"
+                >Presentations</a
+              >
+            </li>
+            <li>
+              <a href="about.html" class="text-white/60 transition-colors hover:text-white">About Us</a>
+            </li>
+            <li>
+              <a href="contact.html" class="text-white/60 transition-colors hover:text-white">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-display text-sm font-semibold uppercase tracking-wider text-white">Get in touch</h3>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li>
+              <a
+                href="mailto:kajanthan2k1@gmail.com"
+                class="flex items-center gap-2 text-white/60 transition-colors hover:text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-4 w-4 shrink-0"
+                  aria-hidden="true"
+                >
+                  <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                </svg>
+                kajanthan2k1@gmail.com
+              </a>
+            </li>
+            <li>
+              <a
+                href="tel:+94764539863"
+                class="flex items-center gap-2 text-white/60 transition-colors hover:text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-4 w-4 shrink-0"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
+                  />
+                </svg>
+                +94 76 453 9863
+              </a>
+            </li>
+            <li class="flex items-start gap-2 text-white/60">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="mt-0.5 h-4 w-4 shrink-0"
+                aria-hidden="true"
+              >
+                <path
+                  d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              SLIIT, New Kandy Road, Malabe, Sri Lanka
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="relative border-t border-white/10">
+        <p class="mx-auto max-w-7xl px-5 py-6 text-xs text-white/50 sm:px-8">
+          © 2026 R26-SE-002 · Sri Lanka Institute of Information Technology. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <button
+      type="button"
+      id="scroll-top"
+      aria-label="Back to top"
+      tabindex="-1"
+      class="fixed bottom-6 right-6 z-50 grid h-14 w-14 place-items-center rounded-full bg-accent text-white shadow-lg shadow-accent/25 transition duration-300 hover:-translate-y-1 hover:bg-primary sm:bottom-8 sm:right-8 pointer-events-none translate-y-4 opacity-0"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.25"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="h-6 w-6"
+        aria-hidden="true"
+      >
+        <path d="m5 12 7-7 7 7" />
+        <path d="M12 19V5" />
+      </svg>
+    </button>
+  </body>
+</html>
